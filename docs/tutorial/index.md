@@ -3,37 +3,71 @@ title: Gatsby.js Tutorials
 disableTableOfContents: true
 ---
 
-Welcome to Gatsby! We’re glad you’re here. The goal of this tutorial is to guide you through setting up and deploying your first Gatsby site using a starter template. As we walk through that process, we’ll introduce some more general web development topics, and go over the underlying structure of a Gatsby site.
+Willkommen bei Gatsby! Wir sind froh, dass du hier bist. Das Ziel dieses
+Tutorials ist es dich durch das Aufsetzen und die Entwicklung deiner ersten
+Gatsby Seite basiered auf einer Starter Vorlage zu leiten. Während wir diesen
+Prozess durchführen werden wir einige allgemeinere Webentwicklungsthemen
+einführen und die unterliegende Struktur einer Gastby Seite erläutern.
 
-> The full tutorial is intended to be as accessible as possible to people without much web development experience (yet!) — no need to be an expert. If you prefer to jump straight to code, feel free to skip the step-by-step tutorial and see the [quick start](/docs/quick-start/) page.
+> Das gesamte Tutorial ist dazu gedacht so zugänglich wie nur möglich zu sein,
+für Personen, die (noch!) keine Webentwicklungserfahrung haben - es ist nicht
+notwendig ein Experte zu sein. Wenn du lieber direkt zum Code springen möchtest,
+dann kannst du dieses Schritt-für-Schritt Tutorial überspringen und dir die
+[Schnell Start](/docs/quick-start) Seite anschauen.
 
-## Gatsby fundamentals
+## Gatsby Grundlagen
 
-0.  [Set up your development environment](/tutorial/part-zero/): We'll introduce you to core technologies that power Gatsby, and guide you through setting up your development environment.
-1.  [Get to know Gatsby building blocks](/tutorial/part-one/): Starting new projects, developing, and deploying sites.
-1.  [Introduction to using CSS in Gatsby](/tutorial/part-two/): Explore libraries like Typography.js and CSS Modules.
-1.  [Building nested layouts in Gatsby](/tutorial/part-three/): Layouts are sections of your site that are reused across multiple pages like headers and footers.
+0. [Setz deine eigene Entwicklungsumgebung auf](/tutorial/part-zero/): Wir
+   führen dich in die Kerntechnologien, die Gatsby betreiben, ein und leiten
+   dich durch das Aufsetzen deiner Entwicklungsumgebung.
+1. [Lerne die Gatsby Bausteine kennen](/tutorial/part-one/): Der Beginn neuer
+   Projekte, das Entwickeln und Veröffentlichen von Webseiten.
+2. [Einführung in die Nutzung von CSS in Gatsby](/tutorial/part-two/): Entdecke
+   Biblitheken wie Typography.js und CSS Module.
+3. [Bauen von verschachtelten Layouts in Gatsby](/tutorial/part-three/):
+   Layouts sind Sektionen deiner Seite, die über verschiedene Seiten wieder
+   benutzt werden, wie Kopf- und Fußzeilen.
 
-## Intermediate tutorials
+## Fortgeschrittene Tutorials
 
-In these intermediate tutorials, you'll learn how to pull data from almost anywhere into your Gatsby site with GraphQL.
+In diesen fortgeschrittenen Tutorials, wirst du lernen wie du Daten von nahezu
+überall mit Hilfe von GraphQL in deine Gatsby Seite integrieren kannst.
 
-4.  [Querying for data in a blog](/tutorial/part-four/): Create a blog and use a GraphQL query to pull your site title into the blog header.
-5.  [Source plugins and rendering queried data](/tutorial/part-five/): Use a source plugin to pull Markdown blog posts into your site and create an index page with a list of blog posts.
-6.  [Transformer plugins](/tutorial/part-six/): Use a transformer plugin to transform your Markdown blog posts into a form the blog can render.
-7.  [Programmatically create pages from data](/tutorial/part-seven/): Learn how to programmatically create a set of pages for your blog posts.
-8.  [Preparing a site to go live](/tutorial/part-eight/): Learn how to audit your site for performance and best practices for accessibility, SEO, and more.
+4. [Abfragen von Daten in einem Blog](/tutorial/part-four/): Erstellung eines
+   Blogs und Nutzung einer GraphQL Anfrage um deinen Webseiten Titel in die
+   Kopfzeile des Blogs zu ziehen.
+5. [Datenquellen Plugins und Darstellung von angefragten Daten](/tutorial/part-five/):
+   Nutzen eines Datenquellen Plugins um Markdown Blog Beiträge in deine Seite
+   zu ziehen und Erstellung einer Index Seite mit der Liste aller Blog Beiträge.
+6. [Umformende Plugins](/tutorials/part-six/): Nutzung eines umformenden
+   Plugins um Markdown Blog Beiträge in eine Form umzuwandeln, die der Blog
+   darstellen kann.
+7. [Programatisches Erstellen von Seiten aus Daten](/tutorial/part-seven/):
+   Lerne wie Seiten für deinen Blog programatisch erstellt werden können.
+8. [Vorbereiten einer Seite zum Veröffentlichen](/tutorial/part-eight/):
+   Lerne wie du deine Seite auf Performance und empfohlene Vorgehensweisen
+   für Barrierefreiheit, SEO und mehr prüfen kannst.
 
-## Theme tutorials
+## Themen Tutorials
 
-Gatsby themes abstract all of your default configuration (shared functionality, data sourcing, design) out of your site and into an installable package.
+Gatsby Themen abstrahieren alle Standardeinstellungen (geteilte Funktionalität,
+Datenquellen, Design) aus deiner Seite und in ein installierbares Paket.
 
-This means that the configuration and functionality isn’t directly written into your project, but rather versioned, centrally managed, and installed as a dependency. You can seamlessly update a theme, compose themes together, and even swap out one compatible theme for another.
+Das bedeutet, dass die Konfiguration und Funktionalität nicht direkt in deinem
+Projekt fest geschrieben ist, sondern als abhängiges Paket versioniert, zentral
+verwaltet und installiert wird. Du kannst problemlos ein Thema aktualiseren,
+Themen zusammensetzen oder eines für ein anderes austauschen.  
 
-Learn more about using and building themes with the [Gatsby theme tutorials](/tutorial/theme-tutorials/).
+Lerne mehr über die Nutzung und das Erstellen von Themen mit dem
+[Gatsby Themen Tutorial](/tutorial/theme-tutorials/).
 
-## Additional tutorials
+## Zusätzliche Tutorials
 
-There are many use cases for Gatsby, some of which aren't covered in the first set of tutorials to keep you focused while learning. Gatsby's Additional Tutorials section is a collection of resources showing how to complete even more Gatsby tasks step-by-step, such as using source plugins for images and CMS content.
+Es gibt viele Nutzungsszenarien für Gatsby, einige werden nicht von dieser
+ersten Reihe von Tutorials abgedeckt um dich beim Lernen fokussiert zu halten.
+Gatsbys zusätzliche Tutorials Sektion ist eine Sammlung von Anleitungen, die
+zeigen wie du noch weitere Gatsby Aufgaben Schritt-für-Schritt durchführen
+kannst, beispielsweise die Nutzung von Datenquellenplugins für Bilder und CMS
+Inhalte. 
 
-Go deeper with [additional Gatsby tutorials](/tutorial/additional-tutorials/).
+Tauch tiefer ein mit [zusätzlichen Gatsby Tutorials](/tutorial/additional-tutorials).
