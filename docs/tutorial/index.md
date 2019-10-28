@@ -53,7 +53,7 @@ In diesen fortgeschrittenen Tutorials, wirst du lernen wie du Daten von nahezu
 Gatsby Themen abstrahieren alle Standardeinstellungen (geteilte Funktionalität,
 Datenquellen, Design) aus deiner Seite und in ein installierbares Paket.
 
-Das bedeutet das die Konfiguration und Funktionalität nicht direkt in deinem
+Das bedeutet, dass die Konfiguration und Funktionalität nicht direkt in deinem
 Projekt fest geschrieben ist, sondern als abhängiges Paket versioniert, zentral
 verwaltet und installiert wird. Du kannst problemlos ein Thema aktualiseren,
 Themen zusammensetzen oder eines für ein anderes austauschen.  
@@ -65,7 +65,7 @@ Lerne mehr über die Nutzung und das Erstellen von Themen mit dem
 
 Es gibt viele Nutzungsszenarien für Gatsby, einige werden nicht von dieser
 ersten Reihe von Tutorials abgedeckt um dich beim Lernen fokussiert zu halten.
-Gatsbys zuätzliche  Tutorials Sektion ist eine Sammlung von Anleitungen, die
+Gatsbys zusätzliche Tutorials Sektion ist eine Sammlung von Anleitungen, die
 zeigen wie du noch weitere Gatsby Aufgaben Schritt-für-Schritt durchführen
 kannst, beispielsweise die Nutzung von Datenquellenplugins für Bilder und CMS
 Inhalte. 
