@@ -65,7 +65,7 @@ werden.
 
 Fälle von missbräuchlichem, belästigendem oder anderweitig nicht akzeptablem
 Verhalten können dem Projektteam unter
-[conduct@gatsbyjs.com](conduct@gatsbyjs.com) gemeldet werden. Alle Beschwerden
+[conduct@gatsbyjs.com](mailto:conduct@gatsbyjs.com) gemeldet werden. Alle Beschwerden
 werden geprüft und untersucht und werden zu einer Antwort führen, die
 angesichts der Umstände für notwendig und angemessen gehalten wird. Das
 Projektteam ist verpflichtet, über diejenigen, die Vorfälle gemeldet haben,
