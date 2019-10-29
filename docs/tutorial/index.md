@@ -23,7 +23,7 @@ dann kannst du dieses Schritt-für-Schritt Tutorial überspringen und dir die
 1. [Lerne die Gatsby Bausteine kennen](/tutorial/part-one/): Der Beginn neuer
    Projekte, das Entwickeln und Veröffentlichen von Webseiten.
 2. [Einführung in die Nutzung von CSS in Gatsby](/tutorial/part-two/): Entdecke
-   Biblitheken wie Typography.js und CSS Module.
+   Bibliotheken wie Typography.js und CSS Module.
 3. [Bauen von verschachtelten Layouts in Gatsby](/tutorial/part-three/):
    Layouts sind Sektionen deiner Seite, die über verschiedene Seiten wieder
    benutzt werden, wie Kopf- und Fußzeilen.
