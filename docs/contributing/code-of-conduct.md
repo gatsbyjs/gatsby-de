@@ -5,7 +5,7 @@ title: Gatsby Vereinbarung über Verhaltenskodex für Mitwirkende
 ## Unsere Verpflichtung
 
 Im Interesse der Förderung eines offenen und einladenden Umfeldes wollen wir
-uns als Teilnehmer und Verantwortliche unseres Projektes verpflichten die
+uns als Mitwirkende und Verantwortliche unseres Projektes verpflichten die
 Teilnahme an dem Projekt und unserer Gemeinschaft zu einer belästigungsfreien
 Erfahrung zu machen – unabhängig von Alter, Körpergröße, Behinderung,
 ethnischer Zuordnung, geschlechtlicher Identität und Ausdruck, Erfahrungsstufe,
