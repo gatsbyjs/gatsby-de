@@ -7,7 +7,7 @@ Willkommen bei Gatsby! Wir sind froh, dass du hier bist. Das Ziel dieses
 Tutorials ist es dich durch das Aufsetzen und die Entwicklung deiner ersten
 Gatsby Seite basiered auf einer Starter Vorlage zu leiten. Während wir diesen
 Prozess durchführen werden wir einige allgemeinere Webentwicklungsthemen
-einführen und die unterliegende Struktur einer Gastby Seite erläutern.
+einführen und die unterliegende Struktur einer Gatsby Seite erläutern.
 
 > Das gesamte Tutorial ist dazu gedacht so zugänglich wie nur möglich zu sein,
 für Personen, die (noch!) keine Webentwicklungserfahrung haben - es ist nicht
