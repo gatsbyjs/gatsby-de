@@ -3,7 +3,7 @@
 
 Dieses Repository enthält die offizielle deutsche Übersetzung für Gatsby.
 
-Beginne mit der [Translation-Progress-Issue](https://github.com/gatsbyjs/gatsby-de/issues/1), um mit dem Übersetzen zu starten!
+Beginne mit dem [Translation-Progress-Issue](https://github.com/gatsbyjs/gatsby-de/issues/1), um mit dem Übersetzen zu starten!
 
 Nützliche Links:
 
@@ -15,4 +15,4 @@ Nützliche Links:
 
 ## Wie kann ich anfangen? 🤔
 
-Beginne mit der [Translation Progress Issue](https://github.com/gatsbyjs/gatsby-de/issues/1) und melde dich für eine Unterseite, die du übersetzen möchtest. Der [Style-Guide](/style-guide.md) hilft dir bei den ersten Schritte und beantwortet die ersten Fragen. 💅
+Beginne mit dem [Translation-Progress-Issue](https://github.com/gatsbyjs/gatsby-de/issues/1) und melde dich für eine Unterseite, die du übersetzen möchtest. Der [Style-Guide](/style-guide.md) hilft dir bei den ersten Schritte und beantwortet die ersten Fragen. 💅
