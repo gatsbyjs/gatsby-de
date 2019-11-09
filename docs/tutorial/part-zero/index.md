@@ -1,59 +1,63 @@
 ---
-title: Set Up Your Development Environment
+title: Setz deine eigene Entwicklungsumgebung auf
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Before you start building your first Gatsby site, you’ll need to familiarize yourself with some core web technologies and make sure that you have installed all required software tools.
+Bevor du anfängst deine erste Seite mit Gatsby zu bauen, solltest du dich mit einigen Kern-Webtechnologien vertraut machen und sicherstellen, dass alle notwendigen Softwarewerkzeuge installiert sind.
 
-## Familiarize yourself with the command line
+## Mache dich mit der Kommadozeile vertraut
 
-The command line is a text-based interface used to run commands on your computer. You’ll also often see it referred to as the terminal. In this tutorial, we’ll use both interchangeably. It’s a lot like using the Finder on a Mac or Explorer on Windows. Finder and Explorer are examples of graphical user interfaces (GUI). The command line is a powerful, text-based way to interact with your computer.
+Die Kommandozeile ist eine textbasierte Schnittstelle, die zum Ausführen von Kommandos auf deinem Computer da ist. Diese wird des Öfteren auch
+Terminal genannt. In dieser Anleitung werden wir beide Begriffe abwechselnd verwenden. Es ist der Verwendung von Finder auf einem Mac, oder dem
+Explorer auf Windows ähnlich. Finder und Explorer sind Beispiele einer grafischen Benutzerobefläche (GUI). Die Kommandozeile ist ein mächtiges, textbasierte Werkzeug, um mit deinem Computer zu interagieren.
 
-Take a moment to locate and open up the command line interface (CLI) for your computer. Depending on which operating system you are using, see [**instructions for Mac**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**instructions for Windows**](https://www.quora.com/How-do-I-open-terminal-in-windows) or [**instructions for Linux**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
+Nimm dir einen Moment Zeit, um die Kommandozeilenschnittstelle (CLI) auf deinem Computer zu finden. Abhängig von deinem Betriebssystem, orientiere dich an [**Anleitung für Mac**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**Anleitung für Windows**](https://www.quora.com/How-do-I-open-terminal-in-windows) oder [**Anleitung für Linux**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
 
-## Install Homebrew for Node.js
+## Installieren von Homebrew für Node.js
 
-To install Gatsby and Node.js, it is recommended to use [Homebrew](https://brew.sh/). A little set-up in the beginning can save you from some headaches later on!
+Für die Installation von Gatsby und Node.js, ist die Nutzung von [Homebrew](https://brew.sh/) ratsam. Die Einrichtung am Anfang kann dich vor späteren Kopfzerbrechen bewahren!
 
-How to install or verify Homebrew on your computer:
+Wie installierst, oder verifizierst du Homebrew auf deinem Computer:
 
-1. Open your Terminal.
-1. See if Homebrew is installed by running `brew -v`. You should see "Homebrew" and a version number.
-1. If not, download and install [Homebrew with the instructions](https://docs.brew.sh/Installation) for your operating system (Mac, Linux or Windows).
-1. Once you've installed Homebrew, repeat step 2 to verify.
+1. Öffne dein Terminal.
+1. Überprüfe ob Homebrew bereits installiert ist, in dem du `brew -v` ausführst. Du solltest dann "Homebrew" und eine Versionsnummer sehen.
+1. Wenn nicht, lade und installiere [Homebrew mit der passenden Anleitung](https://docs.brew.sh/Installation) für dein Betriebssystem (Mac, Linux oder Windows).
+1. Nach dem du Homebrew installiert hast, wiederhole Schritt 2 um dies sicherzustellen.
 
-### Mac Users: install Xcode Command Line Tools
+### Mac Nutzer: Installation von Xcode Command Line Tools
 
-1. Open your Terminal.
-1. On a Mac, install Xcode Command line tools by running `xcode-select --install`.
-   1. If that fails, download it [directly from the Apple site](https://developer.apple.com/download/more/), after signing-in with Apple developer account
-1. After being prompted to start the installation, you'll be prompted again to accept a software license for the tools to download.
+1. Öffne dein Terminal.
+1. Installiere die Xcode Command Line Tools durch das Ausführen von `xcode-select --install` auf einem Mac.
+   1. Wenn dies nicht gelingt, lade dir diese [direkt von der Apple Website](https://developer.apple.com/download/more/) herunter, nach dem du dich mit einem Apple Entwicklerkonto angemeldet hast.
+1. Nach der Aufforderung zum Starten der Installation, wirst du erneut Aufgefordert die Softwarelizenz für die zu installierenden Tools zu akzeptieren.
 
-## ⌚ Install Node.js and npm
+## ⌚ Installiere Node.js und npm
 
-Node.js is an environment that can run JavaScript code outside of a web browser. Gatsby is built with Node.js. To get up and running with Gatsby, you’ll need to have a recent version installed on your computer.
+Node.js ist eine Umgebung, die JavaScript außerhalb eines Web-Browsers ausführen kann. Gatsby wurde mit Node.js gebaut. Damit du Startklar für Gatsby bist, sollte eine neuere Version auf deinem Computer installiert sein.
 
-_Note: Gatsby's minimum supported Node.js version is Node 8, but feel free to use a more recent version._
+_Hinweis: Gatsby's minimal unterstützte Node.js Version ist Node 8, du kannst aber ruhig eine neuere Version verwenden._
 
-1. Open your Terminal.
-1. Run `brew update` to make sure you have the latest version of Homebrew.
-1. Run this command to install Node and npm in one go: `brew install node`
+1. Öffne dein Terminal.
+1. Führe `brew update` aus, um sicherzustellen, dass du die neueste Version von Homebrew hast.
+1. Führe folgenden Befehl aus, um Node und npm in einem Zug zu installieren: `brew install node`
 
-Once you have followed the installation steps, make sure everything was installed properly:
+Sobald du die Installationsschritte abgeschlossen hast, stelle sicher dass alles ordentlich installiert wurde:
 
-### Check your Node.js installation
+### Überprüfe deine Node.js Installation
 
-1.  Open up your terminal.
-2.  Run `node --version`. (If you’re new to the command line, “run `command`” means “type `node --version` in the command prompt, and hit the Enter key”. From here on, this is what we mean by “run `command`”).
-3.  Run `npm --version`.
+1. Öffne dein Terminal.
+2. Führe `node --version` aus. (Wenn du noch nicht mit der Kommandozeile vertraut bist, "Führe `Kommando` aus" bedeutet "Tippe `node --version` in die Kommandozeile ein und drücke die Enter Taste".
+Ab hier ist es das, was wir mit "Führe `Kommando` aus" meinen).
+3. Führe `npm --version` aus.
 
-The output of each of those commands should be a version number. Your versions may not be the same as those shown below! If entering those commands doesn’t show you a version number, go back and make sure you have installed Node.js.
+Die Ausgabe der einzelnen dieser Kommandos sollte eine Versionsnummer sein. Deine Versionen könnten nicht mit den unten gezeigten übereinstimmen! Wenn die Eingabe dieser Kommandos, dir keine Versionsnummer zeigt, gehe zurück und stelle sicher, dass du Node.js installiert hast.
 
-![Check node and npm versions in terminal](01-node-npm-versions.png)
+![Überprüfen von node und npm Versionen im Terminal](01-node-npm-versions.png)
 
-## Install Git
+## Installiere Git
 
+Git ist ein freies, Open-Source Versionsverwaltungssystem, welches für schnelle und effiziente Abwicklung von kleinen und großen Projekten gestaltet wurde.
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. When you install a Gatsby "starter" site, Gatsby uses Git behind the scenes to download and install the required files for your starter. You will need to have Git installed to set up your first Gatsby site.
 
 The steps to download and install Git depend on your operating system. Follow the guide for your system:
