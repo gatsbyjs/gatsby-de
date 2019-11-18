@@ -57,115 +57,113 @@ Die Ausgabe der einzelnen dieser Kommandos sollte eine Versionsnummer sein. Dein
 
 ## Installiere Git
 
-Git ist ein freies, Open-Source Versionsverwaltungssystem, welches für schnelle und effiziente Abwicklung von kleinen und großen Projekten gestaltet wurde.
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. When you install a Gatsby "starter" site, Gatsby uses Git behind the scenes to download and install the required files for your starter. You will need to have Git installed to set up your first Gatsby site.
+Git ist ein freies, Open-Source Versionsverwaltungssystem, welches für schnelle und effiziente Abwicklung von kleinen und großen Projekten gestaltet wurde. Wenn du eine Gatsby "starter" Seite installierst, wird Git von Gatsby im Hintergrund verwendet, um die notwendigen Dateien herunterzuladen und zu installieren. Du wirst Git benötigen, um deine erste Gatsby Seite aufsetzen zu können.
 
-The steps to download and install Git depend on your operating system. Follow the guide for your system:
+Die Schritte für das Herunterladen und Installieren von Git, hängen von deinem Betriebssystem ab. Folge der für dein System passender Anleitung:
 
-- [Install Git on macOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
-- [Install Git on Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
-- [Install Git on Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
+- [Installieren von Git auf macOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
+- [Installieren von Git auf Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
+- [Installieren von Git auf Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
 
-## Using the Gatsby CLI
+## Nutzung der Gatsby CLI
 
-The Gatsby CLI tool lets you quickly create new Gatsby-powered sites and run commands for developing Gatsby sites. It is a published npm package.
+Das Gatsby CLI Tool ermöglicht dir das schnelle Erstellen neuer Gatsby-betriebenen Seiten und das Ausführen von Kommandos für die Entwicklung von Gatsby Seiten. Es ist ein veröffentlichtes npm Paket.
 
-The Gatsby CLI is available via npm and should be installed globally by running `npm install -g gatsby-cli`.
+Das Gatsby CLI is via npm verfügbar und sollte global, durch das Ausführen von `npm install -g gatsby-cli`, installiert werden.
 
-_**Note**: when you install Gatsby and run it for the first time, you'll see a short message notifying you about anonymous usage data that is being collected for Gatsby commands, you can read more about how that data is pulled out and used in the [telemetry doc](/docs/telemetry)._
+_**Hinweis**: Wenn du Gatsby installierst und zum ersten Mal ausführst, wirst du eine kurze Nachricht sehen, die dich über anonyme Verwendung von Daten, die für Gatsby Kommandos gesammelt werden, informiert. Du kannst mehr über die Art und Weise der Datenerfassung, sowie den Verwendungszweck der Daten in der [Telemetriedokumentation](/docs/telemetry) nachlesen._
 
-To see the commands available, run `gatsby --help`.
+Um zu sehen welche Kommandos dir zur Verfügung stehen, führe den Befehl `gatsby --help` aus.
 
-![Check gatsby commands in terminal](05-gatsby-help.png)
+![Überprüfe die Gatsby Kommandos im Terminal](05-gatsby-help.png)
 
-> 💡 If you are unable to successfully run the Gatsby CLI due to a permissions issue, you may want to check out the [npm docs on fixing permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions), or [this guide](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md).
+> 💡 Wenn es dir nicht gelingen sollte, Gatsby CLI wegen Probleme mit den Zugriffsrechten auszuführen, könntest du dir die [npm Dokumentation über die Reparatur der Zugriffsrechte](https://docs.npmjs.com/getting-started/fixing-npm-permissions), oder [diese Anleitung](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md) ansehen.
 
-## Create a Gatsby site
+## Erstellen einer Gatsby Seite
 
-Now you are ready to use the Gatsby CLI tool to create your first Gatsby site. Using the tool, you can download “starters” (partially built sites with some default configuration) to help you get moving faster on creating a certain type of site. The “Hello World” starter you’ll be using here is a starter with the bare essentials needed for a Gatsby site.
+Jetzt bist du für die Nutzung des Gatsby CLI Tools für die Erstellung deiner ersten Gatsby Seite bereit. Mithilfe des Tools, kannst du sogenannte Vorlagen ("starters") herunterladen (teilweise aufgebaute Seiten mit vordefinierter Konfiguration), um mit dessen Hilfe einen schnellen Start bei der Erstellung einer bestimmten Seitenart zu gewährleisten. Die "Hello World" Vorlage im folgenden Beispiel beinhaltet nur das Notwendigste für eine Gatsby Seite.
 
-1.  Open up your terminal.
-2.  Run `gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world`. (_Note: Depending on your download speed, the amount of time this takes will vary. For brevity's sake, the gif below was paused during part of the install_).
-3.  Run `cd hello-world`.
-4.  Run `gatsby develop`.
+1. Öffne dein Terminal.
+2. Führe `gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world` aus. (_Hinweis: Die benötigte Zeit für diesen Vorgang ist von deiner Download-Geschwindigkeit abhängig. Der Kürze halber, wurde das gif unterhalb während der Installation pausiert_).
+3.  Führe `cd hello-world` aus.
+4.  Führe `gatsby develop` aus.
 
 <video controls="controls" autoplay="true" loop="true">
   <source type="video/mp4" src="./03-create-site.mp4" />
-  <p>Sorry! You browser doesn't support this video.</p>
+  <p>Entschuldige! Dein Browser unterstützt dieses Video nicht.</p>
 </video>
 
-What just happened?
+Was ist gerade passiert?
 
 ```shell
 gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
-- `new` is a gatsby command to create a new Gatsby project.
-- Here, `hello-world` is an arbitrary title — you could pick anything. The CLI tool will place the code for your new site in a new folder called “hello-world”.
-- Lastly, the GitHub URL specified points to a code repository that holds the starter code you want to use.
+- `new` is ein gatsby Befehl um ein neues Gatsby Projekt anzulegen.
+- In diesem Beispiel, ist `hello-world` ein willkürlicher Titel - du kannst einen beliebigen wählen. Das CLI Tool wird den Quellcode für deine neue Seite in einen neuen Ordner namens "hello-world" platzieren.
+- Abschließend, die angegebene GitHub URL verweist auf ein Quellcode-Repository, welches den Quellcode der von dir benutzten Vorlage beinhaltet.
 
 ```shell
 cd hello-world
 ```
 
-- This says 'I want to change directories (`cd`) to the “hello-world” subfolder'. Whenever you want to run any commands for your site, you need to be in the context for that site (aka, your terminal needs to be pointed at the directory where your site code lives).
+- Dies bedeutet 'Ich will einen Verzeichniswechsel (`cd`) ins "hello-world" Unterverzeichnis durchführen'. Immer wenn du Kommandos für deine Seite ausführen möchtest, musst du dich im Kontekt für diese Seite befinden (d.h. dein Terminal muss auf das Verzeichnis gerichtet werden, wo sich der Quellcode deiner Seite befindet).
 
 ```shell
 gatsby develop
 ```
 
-- This command starts a development server. You will be able to see and interact with your new site in a development environment — local (on your computer, not published to the internet).
+- Dieser Befehl startet den Entwicklungsserver. Dadurch hast du die Möglichkeit, deine neue Seite in der lokalen (auf deinem Computer, nicht im Internet veröffentlicht) Entwicklungsumgebung zu sehen und damit zu interagieren.
 
-### View your site locally
+### Schau dir deine Seite lokal an
 
-Open up a new tab in your browser and navigate to [**http://localhost:8000**](http://localhost:8000/).
+Öffne einen neuen Tab in deinem Browser und navigiere zu [**http://localhost:8000**](http://localhost:8000/).
 
-![Check homepage](04-home-page.png)
+![Schau dir die Homepage an](04-home-page.png)
 
-Congrats! This is the beginning of your very first Gatsby site! 🎉
+Gratulation! Dies ist der Anfang deiner ganz ersten Gatsby Seite! 🎉
 
-You’ll be able to visit the site locally at [**_http://localhost:8000_**](http://localhost:8000/) for as long as your development server is running. That’s the process you started by running the `gatsby develop` command. To stop running that process (or to “stop running the development server”), go back to your terminal window, hold down the “control” key, and then hit “c” (ctrl-c). To start it again, run `gatsby develop` again!
+Du hast die Möglichkeit deine Seite lokal auf [**_http://localhost:8000_**](http://localhost:8000/) aufzurufen, solange dein Entwicklungsserver in Betrieb ist. Das ist der Prozess, den du durch das Ausführen von `gatsby develop` gestartet hast. Um die Ausführung des Prozesses zu beenden (oder um den "Betrieb des Entwicklungsservers einzustellen"), gehe zurück zum Terminalfenster, halte die "Steuerung" Taste gedrückt und drücke danach "C" (Strg-C). Für ein erneutes Starten, führe wieder `gatsby develop` aus!
 
-**Note:** If you are using VM setup like `vagrant` and/or would like to listen on your local IP address, run `gatsby develop -- --host=0.0.0.0`. Now, the development server listens on both 'localhost' and your local IP.
+**Note:** Wenn du ein Setup aus virtuellen Umgebungen (VM) wie `vagrant` hast und/oder der Server auf deine lokale IP-Adresse verweisen soll, führe `gatsby develop -- --host=0.0.0.0` aus. Jetzt wird der Server sowohl auf `localhost`, als auch auf deine lokale IP reagieren.
 
-## Set up a code editor
+## Quellcode-Editor einrichten
 
-A code editor is a program designed specifically for editing computer code. There are many great ones out there.
+Ein Quellcode-Editor ist eine Anwendung, die speziell für die Bearbeitung von Computer-Code konzipert wurde. Es gibt viele großartige da draußen.
 
-### Download VS Code
+### Herunterladen von VS Code
 
-Gatsby documentation sometimes includes screenshots that were taken in VS Code, so if you don't have a preferred code editor yet, using VS Code will make sure that your screen looks just like the screenshots in the tutorial and docs. If you choose to use VS Code, visit the [VS Code site](https://code.visualstudio.com/#alt-downloads) and download the version appropriate for your platform.
+Gatsby Dokumentation enthält manchmal Screenshots, die innerhalb von VS Code gemacht wurden. Falls du noch keinen Quellcode-Editor bevorzugst, wird die Nutzung von VS Code dafür sorgen, dass dein Bildschirm genauso aussieht wie in den Screenshots in der Anleitung und der Dokumentation. Wenn du dich dazu entscheidest VS Code zu nutzen, besuche die [VS Code Website](https://code.visualstudio.com/#alt-downloads) und lade die geeignete Version für dein Betriebssystem herunter.
 
-### Install the Prettier plugin
+### Installiere die Prettier Erweiterung
 
-We also recommend using [Prettier](https://github.com/prettier/prettier), a tool that helps format your code to avoid errors.
+Wir empfehlen die Nutzung von [Prettier](https://github.com/prettier/prettier), ein Tool welches dir hilft deinen Quellcode zu formatieren, um Fehler zu vermeiden.
 
-You can use Prettier directly in your editor using the [Prettier VS Code plugin](https://github.com/prettier/prettier-vscode):
+Du kannst Prettier direkt in deinem Editor mit Hilfe von [Prettier VS Code Erweiterung](https://github.com/prettier/prettier-vscode) nutzen:
 
-1.  Open the extensions view on VS Code (View => Extensions).
-2.  Search for "Prettier - Code formatter".
-3.  Click "Install". (After installation you'll be prompted to restart VS Code to enable the extension. Newer versions of VS Code will automatically enable the extension after download.)
+1.  Öffne die Erweiterungen Ansicht in VS Code (Viewe => Extensions) .
+2.  Suche nach "Prettier - Code formatter".
+3.  Klicke "Installieren". (Nach der Installation wirst du aufgefordert VS Code neuzustarten, um die Erweiterung zu aktivieren. Neuere Versionen von VS Code aktivieren die Erweiterung automatisch nach dem Herunterladen.)
 
-> 💡 If you're not using VS Code, check out the Prettier docs for [install instructions](https://prettier.io/docs/en/install.html) or [other editor integrations](https://prettier.io/docs/en/editors.html).
+> 💡 Wenn du VS Code nicht nutzt, schau dir die Prettier Dokumentation für [Installationsanweisungen](https://prettier.io/docs/en/install.html) oder [Integration mit einem anderen Editor](https://prettier.io/docs/en/editors.html) an.
 
-## ➡️ What’s Next?
+## ➡️ Wie geht es weiter?
 
-To summarize, in this section you:
+Zusammenfassend, in diesem Abschnitt hast du:
+- Über die Kommandozeile und dessen Anwendung gelernt
+- Node.js, npm CLI Tool, Versionsverwaltungssystem Git und das Gatsby CLI Tool, installiert und kennengelernt.
+- Eine neue Gatsby Seite mit Hilfe des Gatsby CLI Tools generiert
+- Den Gatsby Entwicklungsserver ausgeführt und deine Seite lokal besucht
+- Einen Quellcode-Editor heruntergeladen
+- Einen Quellcode-Formatierer namens Prettier installiert
 
-- Learned about the command line and how to use it
-- Installed and learned about Node.js and the npm CLI tool, the version control system Git, and the Gatsby CLI tool
-- Generated a new Gatsby site using the Gatsby CLI tool
-- Ran the Gatsby development server and visited your site locally
-- Downloaded a code editor
-- Installed a code formatter called Prettier
+Jetzt, geht es weiter mit dem [**Kennenlernen der Gatsby Bausteine**](/tutorial/part-one/).
 
-Now, move on to [**getting to know Gatsby building blocks**](/tutorial/part-one/).
+## Referenzen
 
-## References
+### Übersicht der Kern-Technologien
 
-### Overview of core technologies
-
-It’s not necessary to be an expert with these already — if you’re not, don’t worry! You’ll pick up a lot through the course of this tutorial series. These are some of the main web technologies you’ll use when building a Gatsby site:
+Es ist nicht notwendig ein Experte in folgenden Gebieten zu sein - wenn du keiner bist, mach dir keine Sorgen! Du wirst viel im Laufe dieser Anleitung lernen. Folgend sind einige Kern-Webtechnologien, die du nutzen wirst wenn du eine Seite mit Gatsby baust:
 
 - **HTML**: A markup language that every web browser is able to understand. It stands for HyperText Markup Language. HTML gives your web content a universal informational structure, defining things like headings, paragraphs, and more.
 - **CSS**: A presentational language used to style the appearance of your web content (fonts, colors, layout, etc). It stands for Cascading Style Sheets.
