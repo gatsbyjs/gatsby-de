@@ -163,34 +163,34 @@ Jetzt, geht es weiter mit dem [**Kennenlernen der Gatsby Bausteine**](/tutorial/
 
 ### Übersicht der Kern-Technologien
 
-Es ist nicht notwendig ein Experte in folgenden Gebieten zu sein - wenn du keiner bist, mach dir keine Sorgen! Du wirst viel im Laufe dieser Anleitung lernen. Folgend sind einige Kern-Webtechnologien, die du nutzen wirst wenn du eine Seite mit Gatsby baust:
+Es ist nicht notwendig ein Experte in folgenden Gebieten zu sein - wenn du keiner bist, mach dir keine Sorgen! Du wirst viel im Laufe dieser Anleitung lernen. Folgend sind einige Kern-Webtechnologien, die du nutzen wirst, wenn du eine Seite mit Gatsby baust:
 
-- **HTML**: A markup language that every web browser is able to understand. It stands for HyperText Markup Language. HTML gives your web content a universal informational structure, defining things like headings, paragraphs, and more.
-- **CSS**: A presentational language used to style the appearance of your web content (fonts, colors, layout, etc). It stands for Cascading Style Sheets.
-- **JavaScript**: A programming language that helps us make the web dynamic and interactive.
-- **React**: A code library (built with JavaScript) for building user interfaces. It’s the framework that Gatsby uses to build pages and structure content.
-- **GraphQL**: A query language that allows you to pull data into your website. It’s the interface that Gatsby uses for managing site data.
+- **HTML**: Eine Auszeichnungssprache die jeder Browser versteht. Die Abkürzung steht im Englischen für HyperText Markup Language. HTML verschafft deinen Webinhalten eine Informationsstruktur, die durch das Definieren von Überschriften, Paragraphen und weiteren Elementen, entsteht.
+- **CSS**: Eine repräsentative Sprache, die für das Aussehen deiner Webinhalte (Schriften, Farben, Layout, etc.). Das Akronym steht für Cascading Style Sheets.
+- **JavaScript**: Eine Programmiersprache die uns hilft, das Web dynamisch und interaktiv zu gestalten.
+- **React**: Eine Quellcode-Bibliothek (gebaut mit JavaScript) für die Erstellung von Benutzeroberflächen. Es ist ein Framework welches von Gatsby für die Erstellung von Seiten und strukturierten Inhalten verwendet wird.
+- **GraphQL**: Eine Abfragensprache, die es ermöglicht, deine Website mit Daten zu versorgen. Es ist die Schnittstelle, die von Gatsby für das Verwalten von Seitendaten verwendet wird.
 
-### What is a website?
+### Was ist eine Website?
 
-For a comprehensive introduction to what a website is--including an intro to HTML and CSS--check out “[**Building your first web page**](https://learn.shayhowe.com/html-css/building-your-first-web-page/)”. It’s a great place to start learning about the web. For a more hands-on introduction to [**HTML**](https://www.codecademy.com/learn/learn-html), [**CSS**](https://www.codecademy.com/learn/learn-css), and [**JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript), check out the tutorials from Codecademy. [**React**](https://reactjs.org/tutorial/tutorial.html) and [**GraphQL**](http://graphql.org/graphql-js/) also have their own introductory tutorials.
+Für eine umfassende Einführung zum Thema Website--inklusive einer Intro zu HTML und CSS--siehe “[**Baue deine erste Website**](https://learn.shayhowe.com/html-css/building-your-first-web-page/)”. Es ist ein idealer Ausgangspunkt, um über das Web zu lernen. Für etwas praktische Einführung zu [**HTML**](https://www.codecademy.com/learn/learn-html), [**CSS**](https://www.codecademy.com/learn/learn-css), und [**JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript), siehe die Tutorials von Codecademy. [**React**](https://reactjs.org/tutorial/tutorial.html) und [**GraphQL**](http://graphql.org/graphql-js/) haben ebenso ihre eigenen Tutorials zur Einführung.
 
-### Learn more about the command line
+### Lerne mehr über die Kommandozeile
 
-For a great introduction to using the command line, check out [**Codecademy’s Command Line tutorial**](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command) for Mac and Linux users, and [**this tutorial**](https://www.computerhope.com/issues/chusedos.htm) for Windows users. Even if you are a Windows user, the first page of the Codecademy tutorial is a valuable read. It explains what the command line is, not just how to interface with it.
+Für eine tolle Einführung zur Kommandozeile, siehe [**Codecademy’s Kommandozeile-Tutorial**](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command) für Mac und Linux Nutzer, und [**dieses Tutorial**](https://www.computerhope.com/issues/chusedos.htm) for Windows Nutzer. Selbst wenn du ein Windows Nutzer bist, die erste Seite des Codecademy Tutorials ist sehr lesenswert. Darin wird auch die Kommandozeile selbst und nicht nur die Interaktion mit dieser, erklärt.
 
-### Learn more about npm
+### Lerne mehr über npm
 
-npm is a JavaScript package manager. A package is a module of code that you can choose to include in your projects. If you just downloaded and installed Node.js, npm was installed with it!
+npm ist ein JavaScript Paketmanager. Ein Paket ist ein Quellcode-Modul, welches du in deinen Projekten einbinden kannst. Wenn du nur Node.js heruntergeladen und installiert hast, dann wurde npm auch mitinstalliert!
 
-npm has three distinct components: the npm website, the npm registry, and the npm command line interface (CLI).
+npm besteht aus drei unterschiedlichen Komponenten: die npm Website, das npm Register und die npm Kommandozeilenschnittstelle (CLI).
 
-- On the npm website, you can browse what JavaScript packages are available in the npm registry.
-- The npm registry is a large database of information about JavaScript packages available on npm.
-- Once you’ve identified a package you want, you can use the npm CLI to install it in your project or globally (like other CLI tools). The npm CLI is what talks to the registry — you generally only interact with the npm website or the npm CLI.
+- Auf der npm Website kannst du nachsehen, welche JavaScript Pakete im npm Register verfügbar sind.
+- Das npm Register ist eine große Datenbank, die Informationen über die auf npm verfügbaren JavaScript Pakete, beinhaltet.
+- Sobald du ein gewünschtes Paket gefunden hast, kannst du die npm CLI nutzen, um es in deinem Projekt oder global (sowie andere CLI Tools), installieren. Die npm CLI ist das Sprachrohr zum Register - grundsätzlich, interagierst du nur mit der npm Website oder der npm CLI.
 
-> 💡 Check out npm’s introduction, “[**What is npm?**](https://docs.npmjs.com/getting-started/what-is-npm)”.
+> 💡 Schau dir die npm Einführung zu “[**Was ist npm?**](https://docs.npmjs.com/getting-started/what-is-npm)” an.
 
-### Learn more about Git
+### Lerne mehr über Git
 
-You will not need to know Git to complete this tutorial, but it is a very useful tool. If you are interested in learning more about version control, Git, and GitHub, check out GitHub's [Git Handbook](https://guides.github.com/introduction/git-handbook/).
+Du wirst Git nicht brauchen um dieses Tutorial abzuschließen, es ist jedoch ein sehr praktisches Hilfsmittel. Wenn du interessiert bist, mehr über Versionskontrolle, Git und Github zu lernen, schau dir das [Git Handbuch](https://guides.github.com/introduction/git-handbook/) von GitHub an.
