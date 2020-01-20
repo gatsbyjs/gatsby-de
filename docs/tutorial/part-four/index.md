@@ -1,63 +1,63 @@
 ---
-title: Data in Gatsby
+title: Daten in Gatsby
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Welcome to Part Four of the tutorial! Halfway through! Hope things are starting
-to feel pretty comfortable 😀
+Willkommen zum vierten Teil des Tutorials! Zur Hälfte fertig! Hoffentlich fangen
+die Dinge an vertrauter zu werden 😀
 
-## Recap of the first half of the tutorial
+## Rückblick auf die erste Hälfte des Tutorials
 
-So far, you've been learning how to use React.js—how powerful it is to be able to
-create your _own_ components to act as custom building blocks for websites.
+Bislang hast du gelernt React.js einzusetzen und wie mächtig es ist, *eigene* Komponenten
+schreiben zu können, die als benutzerdefinierte Bausteine für Websites agieren.
 
-You’ve also explored styling components using CSS Modules.
+Du has auch mit Hilfe der CSS Modules, Styling Components erkundet.
 
-## What's in this tutorial?
+## Was beinhaltet dieses Tutorial?
 
-In the next four parts of the tutorial (including this one), you'll be diving into the Gatsby data layer, which is a powerful feature of Gatsby that lets you easily build sites from Markdown, WordPress, headless CMSs, and other data sources of all flavors.
+In den nächsten vier Teilen des Tutorials (inklusive diesen) wirst du in die Datenschicht von Gatsby eintauchen, welche ein mächtiges Feature von Gatsby darstellt und dich mit Leichtigkeit Seiten aus Markdown, WordPress, Headless CMS, sowie vielen anderen Datenquellen, erstellen lässt.
 
-**NOTE:** Gatsby’s data layer is powered by GraphQL. For an in-depth tutorial on
-GraphQL, we recommend [How to GraphQL](https://www.howtographql.com/).
+**HINWEIS:** Gatsby’s Datenschicht wird mit GraphQL betrieben. Für ein ausführliches
+über GraphQL, empfehlen wir [How to GraphQL](https://www.howtographql.com/).
 
-## Data in Gatsby
+## Daten in Gatsby
 
-A website has four parts: HTML, CSS, JS, and data. The first half of the
-tutorial focused on the first three. Now let’s learn how to use data in Gatsby
-sites.
+Eine Gatsby Website hat vier Teile: HTML, CSS, JS und Daten. Die erste Hälfte
+des Tutorials fokussierte sich auf die ersten drei. Nun, lass uns lernen wie
+Daten in Gatsby Websites verwendet werden können.
 
-**What is data?**
+**Was sind Daten?**
 
-A very computer science-y answer would be: data is things like `"strings"`,
-integers (`42`), objects (`{ pizza: true }`), etc.
+Eine sehr informatikfokussierte Antwort würde lauten: Daten sind Dinge wie `"Strings"`,
+Integers (`42`), Objekte (`{ pizza: true }`), etc.
 
-For the purpose of working in Gatsby, however, a more useful answer is
-"everything that lives outside a React component".
+Für den Zweck des Arbeitens mit Gatsby ist jedoch "Alles was außerhalb einer React-Komponente lebt",
+eine viel nützlichere Antwort.
 
-So far, you've been writing text and adding images _directly_ in components.
-Which is an _excellent_ way to build many websites. But, often you want to store
-data _outside_ components and then bring the data _into_ the component as
-needed.
+Bisher, has du *direkt* in den Komponenten Text geschrieben und Bilder hinzugefügt.
+Dies ist eine *hervorragende* Möglichkeit Websites zu bauen. Nichtsdestotrotz, willst
+du manchmal Daten *außerhalb* der Komponenten speichern und dann diese Daten *in* die
+Komponente bei Bedarf reinbringen.
 
-If you're building a site with WordPress (so other contributors
-have a nice interface for adding & maintaining content) and Gatsby, the _data_
-for the site (pages and posts) are in WordPress and you _pull_ that data, as
-needed, into your components.
+Wenn du eine Seite mit WordPress (so haben andere Beitragende
+eine schöne Oberfläche für das Hinzufügen & Warten der Inhalte) und Gatsby baust,
+sind die *Daten* für die Website (Seiten und Beiträge) in WordPress und du *ziehst*
+diese Daten bei Bedarf in deine Komponenten.
 
-Data can also live in file types like Markdown, CSV, etc. as well as databases
-and APIs of all sorts.
+Dateitypen wie Markdown, CSV, etc. sowie Datenbanken und APIs aller Arten, können
+als Datenquellen agieren.
 
-**Gatsby's data layer lets you pull data from these (and any other source)
-directly into your components**—in the shape and form you want.
+**Gatsby's Datenschicht lässt dich von diesen (und vielen anderen) Datenquellen,
+Daten in deine Komponenten beziehen**, in jeder beliebiger Gestalt und Form.
 
-## Using Unstructured Data vs GraphQL
+## Nutzen von unstrukturierten Daten vs GraphQL
 
-### Do I have to use GraphQL and source plugins to pull data into Gatsby sites?
+### Muss ich GraphQL und Quellen-Plugins nutzen, um Daten in eine Gatsby Website einzubinden?
 
-Absolutely not! You can use the node `createPages` API to pull unstructured data into Gatsby pages directly, rather than through the GraphQL data layer. This is a great choice for small sites, while GraphQL and source plugins can help save time with more complex sites.
+Natürlich nicht! Du kannst die node API `createPages` nutzen, um unstrukturierte Daten auf Gatsby Seiten direkt zu beziehen, anstatt eine GraphQL Datenschicht zu nutzen. Dies stellt eine gute Wahl für kleine Websites dar, während GraphQL und Quellen-Plugins dir beim Zeitsparen helfen, wenn es sich um komplexe Websites handelt.
 
-See the [Using Gatsby without GraphQL](/docs/using-gatsby-without-graphql/) guide to learn how to pull data into your Gatsby site using the node `createPages` API and to see an example site!
+Schau dir die [Nutzen von Gatsby ohne GraphQL](/docs/using-gatsby-without-graphql/) Anleitung an, um zu lernen, wie du Daten auf deiner Gatsby Website mittels node `createPages` API beziehen kannst und um eine Beispielseite zu sehen.
 
 ### When do I use unstructured data vs GraphQL?
 
