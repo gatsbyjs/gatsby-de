@@ -66,41 +66,41 @@ Wenn du eine kleine Website baust, stellt in dieser Anleitung beschriebene Vorge
 1.  Siehe in der [Plugin Bibliothek](/plugins/) nach, ob es bereits Quellen-Plugins und/oder Transformer-Plugins gibt, die du nutzen möchtest
 2.  Falls es keine gibt, lese die [Plugin Authoring](/docs/creating-plugins/) Anleitung und ziehe es in Erwägung dein eigenes Plugin zu bauen!
 
-### How Gatsby's data layer uses GraphQL to pull data into components
+### Wie Gatsby's Datenschicht GraphQL nutzt, um Komponenten mit Daten zu versorgen
 
-There are many options for loading data into React components. One of the most
-popular and powerful of these is a technology called
-[GraphQL](http://graphql.org/).
+Es gibt viele Möglichkeiten für das Laden der Daten innerhalb von React-Komponenten. Eine der meistverwendeten
+und wirksamen Möglichkeiten ist eine Technoligie namens [GraphQL](http://graphql.org/).
 
-GraphQL was invented at Facebook to help product engineers _pull_ needed data into
-components.
+GraphQL wurde von Facebook erfunden, um den Produktingenieuren zu helfen, notwendige Daten
+in die Kompontenten zu *ziehen*.
 
-GraphQL is a **q**uery **l**anguage (the _QL_ part of its name). If you're
-familiar with SQL, it works in a very similar way. Using a special syntax, you describe
-the data you want in your component and then that data is given
-to you.
+GraphQL ist eine **Q**uery **L**anguage (der *QL* Teil des Namens). Wenn du mit
+SQL vertraut bist, ist die Funktionsweise sehr ähnlich. Unter Anwendung von spezieller Syntax
+beschreibst du die Daten, die du in deiner Komponente haben willst und dann erhältst
+du diese Daten.
 
-Gatsby uses GraphQL to enable components to declare the data they need.
+Gatsby nutzt GraphQL um den Komponenten zu ermöglichen, benötigte Daten zu deklarieren.
 
-## Create a new example site
+## Erstelle eine neue Beispielseite
 
-Create another new site for this part of the tutorial. You're going to build a Markdown blog called "Pandas Eating Lots". It's dedicated to showing off the best pictures and videos of pandas eating lots of food. Along the way, you'll be dipping your toes into GraphQL and Gatsby's Markdown support.
+Erstelle eine andere neue Seite für diesen Abschnitt des Tutorials. Du wirst ein Markdown-Blog namens "Pandas essen viel" erstellen. Es ist der Darstellung von besten Bildern und Videos von Pandas
+die viel Essen gewidmet. Nebenbei wirst du in GraphQL und Gatsby's Markdown-Support eintauchen.
 
-Open a new terminal window and run the following commands to create a new Gatsby site in a directory called `tutorial-part-four`. Then navigate to the new directory:
+Öffne ein neues Fenster im Terminal und führe folgende Befehle aus, um eine neue Gatsby-Seite im Ordner `tutorial-part-four` zu erstellen. Navigiere danach in das erstellte Verzeichnis:
 
 ```shell
 gatsby new tutorial-part-four https://github.com/gatsbyjs/gatsby-starter-hello-world
 cd tutorial-part-four
 ```
 
-Then install some other needed dependencies at the root of the project. You'll use the Typography theme
-"Kirkham", and you'll try out a CSS-in-JS library, ["Emotion"](https://emotion.sh/):
+Installiere danach einige notwendige Abhängigkeiten im Root-Verzeichnis des Projekts. Du wirst das Typography-Thema
+"Kirkham" nutzen und eine CSS-in-JS Bibliothek ausprobieren, ["Emotion"](https://emotion.sh/):
 
 ```shell
 npm install --save gatsby-plugin-typography typography react-typography typography-theme-kirkham gatsby-plugin-emotion @emotion/core
 ```
 
-Set up a site similar to what you ended with in [Part Three](/tutorial/part-three). This site will have a layout component and two page components:
+Setze eine Website auf die der am Ende des [Teil Drei](/tutorial/part-three) Tutorials ähnlich ist. Diese Website hat eine Layout-Komponente und zwei Seiten-Komponenten:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
@@ -126,7 +126,7 @@ export default ({ children }) => (
           font-style: normal;
         `}
       >
-        Pandas Eating Lots
+        Pandas essen viel
       </h3>
     </Link>
     <Link
@@ -135,7 +135,7 @@ export default ({ children }) => (
         float: right;
       `}
     >
-      About
+      Über uns
     </Link>
     {children}
   </div>
@@ -148,11 +148,11 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <h1>Amazing Pandas Eating Things</h1>
+    <h1>Erstaunliche Pandas essen Dinge</h1>
     <div>
       <img
         src="https://2.bp.blogspot.com/-BMP2l6Hwvp4/TiAxeGx4CTI/AAAAAAAAD_M/XlC_mY3SoEw/s1600/panda-group-eating-bamboo.jpg"
-        alt="Group of pandas eating bamboo"
+        alt="Gruppe von Pandas essen Bambus"
       />
     </div>
   </Layout>
@@ -165,10 +165,10 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <h1>About Pandas Eating Lots</h1>
+    <h1>Über Pandas essen viel</h1>
     <p>
-      We're the only site running on your computer dedicated to showing the best
-      photos and videos of pandas eating lots of food.
+      Wir sind die einzige Seite auf deinem Computer, die der Darstellung von besten
+      Bildern und Videos von Pandas die viel Essen gewidmet ist.
     </p>
   </Layout>
 )
@@ -184,7 +184,7 @@ export default typography
 export const rhythm = typography.rhythm
 ```
 
-`gatsby-config.js` (must be in the root of your project, not under src)
+`gatsby-config.js` (muss im Root-Verzeichnis deines Projektes sein, nicht unter src)
 
 ```javascript:title=gatsby-config.js
 module.exports = {
@@ -200,13 +200,13 @@ module.exports = {
 }
 ```
 
-Add the above files and then run `gatsby develop`, per usual, and you should see the following:
+Füge die oberen Dateien hinzu und führe danach wie immer `gatsby develop` aus, du solltest nun folgendes sehen:
 
 ![start](start.png)
 
-You have another small site with a layout and two pages.
+Du hast eine weitere kleine Website mit einem Layout und zwei Seiten.
 
-Now you can start querying 😋
+Nun kannst du mit Abfragen beginnen 😋
 
 ## Your first GraphQL query
 
