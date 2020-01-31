@@ -36,7 +36,7 @@ Für den Zweck des Arbeitens mit Gatsby ist jedoch "Alles was außerhalb einer R
 eine viel nützlichere Antwort.
 
 Bisher, has du *direkt* in den Komponenten Text geschrieben und Bilder hinzugefügt.
-Dies ist eine *hervorragende* Möglichkeit Websites zu bauen. Nichtsdestotrotz, willst
+Dies ist eine *hervorragende* Möglichkeit Websites zu entwickeln. Nichtsdestotrotz, willst
 du manchmal Daten *außerhalb* der Komponenten speichern und dann diese Daten *in* die
 Komponente bei Bedarf reinbringen.
 
@@ -64,7 +64,7 @@ Schau dir die [Nutzen von Gatsby ohne GraphQL](/docs/using-gatsby-without-graphq
 Wenn du eine kleine Website baust, stellt in dieser Anleitung beschriebene Vorgehensweise, eine effiziente Möglichkeit dar, mit Hilfe der `createPages` API unstrukturierte Daten einzubinden. Wenn die Website später komplexer werden sollte, du weitere komplexe Websites erstellst oder einfach deine Daten umwandeln willst, solltest du diese Schritte befolgen:
 
 1.  Siehe in der [Plugin Bibliothek](/plugins/) nach, ob es bereits Quellen-Plugins und/oder Transformer-Plugins gibt, die du nutzen möchtest
-2.  Falls es keine gibt, lese die [Plugin Authoring](/docs/creating-plugins/) Anleitung und ziehe es in Erwägung dein eigenes Plugin zu bauen!
+2.  Falls es keine gibt, lese die [Plugin Authoring](/docs/creating-plugins/) Anleitung und ziehe es in Erwägung dein eigenes Plugin zu entwickeln!
 
 ### Wie Gatsby's Datenschicht GraphQL nutzt, um Komponenten mit Daten zu versorgen
 
@@ -208,19 +208,19 @@ Du hast eine weitere kleine Website mit einem Layout und zwei Seiten.
 
 Nun kannst du mit Abfragen beginnen 😋
 
-## Your first GraphQL query
+## Deine erste GraphQL Abfrage
 
-When building sites, you'll probably want to reuse common bits of data -- like the _site title_ for example. Look at the `/about/` page. You'll notice that you have the site title (`Pandas Eating Lots`) in both the layout component (the site header) as well as in the `<h1 />` of the `about.js` page (the page header).
+Während der Entwicklung von Websites, möchtest du wahrscheinlich die häufig benutzten Teile der Daten wiederverwenden -- zum Beispiel den *Seitentitel*. Schau dir die `/about/` Seite an. Du wirst merken, dass du den Seitentitel (`Pandas essen viel`) in beiden Komponenten (Website Titel) und im `<h1 />` der `about.js` Seite (Seitentitel) hast.
 
-But what if you want to change the site title in the future? You'd have to search for the title across all your components and edit each instance. This is both cumbersome and error-prone, especially for larger, more complex sites. Instead, you can store the title in one location and reference that location from other files; change the title in a single place, and Gatsby will _pull_ your updated title into files that reference it.
+Aber was wäre, wenn du den Titel der Website in der Zukunft ändern möchtest? Du müsstest nach dem Titel in allen deinen Komponenten suchen und jede Instanz manuell ändern. Dies ist nicht nur mühselig, sondern auch fehleranfällig, im speziellen bei größeren und komplexeren Websites. Stattdessen, speicherst du den Titel an einem Ort und referenzierst diesen Ort in anderen Dateien; Ändere den Titel an einem einzigen Ort und Gatsby wird den aktualisierten Titel in den Dateien, die diesen referenzieren *erneuern*.
 
-The place for these common bits of data is the `siteMetadata` object in the `gatsby-config.js` file. Add your site title to the `gatsby-config.js` file:
+Der Ort für diese häufig verwendeten Teile der Daten ist das `siteMetadata` Objekt in der `gatsby-config.js`. Füge den Titel deiner Website in die `gatsby-config.js` Datei hinzu:
 
 ```javascript:title=gatsby-config.js
 module.exports = {
   // highlight-start
   siteMetadata: {
-    title: `Title from siteMetadata`,
+    title: `Titel von siteMetadata`,
   },
   // highlight-end
   plugins: [
@@ -235,11 +235,11 @@ module.exports = {
 }
 ```
 
-Restart the development server.
+Starte den Entwicklungsserver neu.
 
-### Use a page query
+### Nutzung einer Seitenabfrage
 
-Now the site title is available to be queried; Add it to the `about.js` file using a [page query](/docs/page-query):
+Nun ist der Titel der Website bereit für eine Abfrage. Füge diesen zu der `about.js` Datei hinzu in dem du eine [Seitenabfrage](/docs/page-query) nutzt:
 
 ```jsx:title=src/pages/about.js
 import React from "react"
@@ -249,10 +249,10 @@ import Layout from "../components/layout"
 // highlight-next-line
 export default ({ data }) => (
   <Layout>
-    <h1>About {data.site.siteMetadata.title}</h1> {/* highlight-line */}
+    <h1>Über {data.site.siteMetadata.title}</h1> {/* highlight-line */}
     <p>
-      We're the only site running on your computer dedicated to showing the best
-      photos and videos of pandas eating lots of food.
+      Wir sind die einzige Seite auf deinem Computer, die der Darstellung von besten
+      Bildern und Videos von Pandas die viel Essen gewidmet ist.
     </p>
   </Layout>
 )
@@ -270,11 +270,11 @@ export const query = graphql`
 // highlight-end
 ```
 
-It worked! 🎉
+Es hat funktioniert! 🎉
 
-![Page title pulling from siteMetadata](site-metadata-title.png)
+![Abfragen des Titels der Seitee von siteMetadata](site-metadata-title.png)
 
-The basic GraphQL query that retrieves the `title` in your `about.js` changes above is:
+Die grundlegende GraphQL Abfrage welche die Änderungen von `title` in deiner `about.js` erhält, sieht folgendermaßen aus:
 
 ```graphql:title=src/pages/about.js
 {
@@ -286,11 +286,11 @@ The basic GraphQL query that retrieves the `title` in your `about.js` changes ab
 }
 ```
 
-> 💡 In [part five](/tutorial/part-five/#introducing-graphiql), you'll meet a tool that lets us interactively explore the data available through GraphQL, and help formulate queries like the one above.
+> 💡 Im [fünften Teil](/tutorial/part-five/#introducing-graphiql) wirst du ein Tool kennenlernen, welches es dir ermöglicht, die durch GraphQL verfügbaren Daten interaktiv zu entdecken und Abfragen, wie die vorherige zu formulieren.
 
-Page queries live outside of the component definition -- by convention at the end of a page component file -- and are only available on page components.
+Seitenabfragen existieren außerhalb der Komponenten-Definition -- grundsätzlich am Ende einer Seitenkomponente Datei -- und nur in Seitenkomponenten verfügbar.
 
-### Use a StaticQuery
+### Nutzung einer StaticQuery
 
 [StaticQuery](/docs/static-query/) is a new API introduced in Gatsby v2 that allows non-page components (like your `layout.js` component), to retrieve data via GraphQL queries.
 Let's use its newly introduced hook version — [`useStaticQuery`](/docs/use-static-query/).
