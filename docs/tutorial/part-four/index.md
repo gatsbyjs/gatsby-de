@@ -208,7 +208,7 @@ Du hast eine weitere kleine Website mit einem Layout und zwei Seiten.
 
 Nun kannst du mit Abfragen beginnen 😋
 
-## Deine erste GraphQL Abfrage
+## Deine erste GraphQL-Abfrage
 
 Während der Entwicklung von Websites, möchtest du wahrscheinlich die häufig benutzten Teile der Daten wiederverwenden -- zum Beispiel den *Seitentitel*. Schau dir die `/about/` Seite an. Du wirst merken, dass du den Seitentitel (`Pandas essen viel`) in beiden Komponenten (Website Titel) und im `<h1 />` der `about.js` Seite (Seitentitel) hast.
 
@@ -272,9 +272,9 @@ export const query = graphql`
 
 Es hat funktioniert! 🎉
 
-![Abfragen des Titels der Seitee von siteMetadata](site-metadata-title.png)
+![Abfragen des Titels der Seite von siteMetadata](site-metadata-title.png)
 
-Die grundlegende GraphQL Abfrage welche die Änderungen von `title` in deiner `about.js` erhält, sieht folgendermaßen aus:
+Die grundlegende GraphQL-Abfrage welche die Änderungen von `title` in deiner `about.js` erhält, sieht folgendermaßen aus:
 
 ```graphql:title=src/pages/about.js
 {
@@ -292,10 +292,10 @@ Seitenabfragen existieren außerhalb der Komponenten-Definition -- grundsätzlic
 
 ### Nutzung einer StaticQuery
 
-[StaticQuery](/docs/static-query/) is a new API introduced in Gatsby v2 that allows non-page components (like your `layout.js` component), to retrieve data via GraphQL queries.
-Let's use its newly introduced hook version — [`useStaticQuery`](/docs/use-static-query/).
+[StaticQuery](/docs/static-query/) ist eine neue API die mit Gatsby v2 eingeführt wurde und es ermöglicht, Komponenten die keine Seite darstellen (wie deine `layout.js` Komponente), mittels GraphQL-Abfragen mit Daten zu versorgen.
+Lass uns die neu vorgestellte Hook-Version - [`useStaticQuery`](/docs/use-static-query/) nutzen.
 
-Go ahead and make some changes to your `src/components/layout.js` file to use the `useStaticQuery` hook and a `{data.site.siteMetadata.title}` reference that uses this data. When you are done, your file will look like this:
+Leg los und passe deine `src/components/layout.js` Datei an, um den `useStaticQuery` Hook und die `{data.site.siteMetadata.title}` Referenz zu nutzen, die diese Daten nutzt. Wenn du fertig bist, sollte deine Datei wie folgt aussehen:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
@@ -344,7 +344,7 @@ export default ({ children }) => {
           float: right;
         `}
       >
-        About
+        Über uns
       </Link>
       {children}
     </div>
@@ -354,26 +354,26 @@ export default ({ children }) => {
 // highlight-end
 ```
 
-Another success! 🎉
+Erneut ein Erfolg! 🎉
 
-![Page title and layout title both pulling from siteMetadata](site-metadata-two-titles.png)
+![Seitentitel und Layouttitel beziehen nun beide den Wert von siteMetadata](site-metadata-two-titles.png)
 
-Why use two different queries here? These examples were quick introductions to
-the query types, how they are formatted, and where they can be used. For now,
-keep in mind that only pages can make page queries. Non-page components, such as
-Layout, can use StaticQuery. [Part 7](/tutorial/part-seven/) of the tutorial explains these in greater
-depth.
+Warum nutzen wir zwei unterschiedliche Abfragen hier? Diese Beispiele waren eine
+schnelle Einführung zu den Abfragentypen, wie sie formattiert werden
+und wo sie genutzt werden. Für den Augenblick, solltest du beachten,
+dass Seitenabfragen nur von Seiten durchgeführt werden können. Komponenten die
+keine Seite darstellen, wie Layout, können StaticQuery nutzen. Im [Teil 7](/tutorial/part-seven/) des Tutorials
+werden diese ausführlicher behandelt.
 
-But let's restore the real title.
+Lass uns jedoch den echten Seitentitel wiederherstellen.
 
-One of the core principles of Gatsby is that _creators need an immediate connection to what they're creating_ ([hat tip to Bret Victor](http://blog.ezyang.com/2012/02/transcript-of-inventing-on-principle/)). In other words, when you make any change to code you should immediately see the effect of that change. You manipulate an input of Gatsby and you see the new output showing up on the screen.
+Eines der Grundprinzipien von Gatsby ist, dass *Erschaffer eine unmittelbare Verbindung zu ihrer Kreation brauchen* ([Kudos an Bret Victor](http://blog.ezyang.com/2012/02/transcript-of-inventing-on-principle/)). In anderen Worten, wenn du eine Änderung in deinem Code machst, solltest du unmittelbar die Auswirkung dieser Änderung sehen. Du manipulierst den Input von Gatsby und siehst wie der neue Output auf dem Bildschirm erscheint.
 
-So almost everywhere, changes you make will immediately take effect. Edit the `gatsby-config.js` file again, this time changing the `title` back to "Pandas Eating Lots". The change should show up very quickly in your site pages.
+Dies findet fast überall statt, Änderungen die von dir durchgeführt werden, treten unmittelbar in Kraft. Bearbeite wieder die `gatsby-config.js` Datei, ändere dieses Mal den `title`zurück auf "Pandas essen viel". Die Änderung sollte sehr schnell auf den Seiten deiner Website erscheinen.
 
-![Both titles say Pandas Eating Lots](pandas-eating-lots-titles.png)
+![Beide Titel sind nun auf Pandas essen viel gesetzt](pandas-eating-lots-titles.png)
 
-## What's coming next?
+## Was kommt als Nächstes?
 
-Next, you'll be learning about how to pull data into your Gatsby site using
-GraphQL with source plugins in [part five](/tutorial/part-five/) of the
-tutorial.
+Als Nächstes wirst du im [fünften Teil](/tutorial/part-five/) des Tutorials lernen,
+wie deine Gatsby Website mittels GraphQL und Quellen-Plugins mit Daten versorgt werden kann.
