@@ -12,20 +12,20 @@ die Dinge an vertrauter zu werden 😀
 Bislang hast du gelernt React.js einzusetzen und wie mächtig es ist, *eigene* Komponenten
 schreiben zu können, die als benutzerdefinierte Bausteine für Websites agieren.
 
-Du has auch mit Hilfe der CSS Modules, Styling Components erkundet.
+Mit Hilfe der CSS Modules hast du auch Styling Components erkunden können.
 
 ## Was beinhaltet dieses Tutorial?
 
-In den nächsten vier Teilen des Tutorials (inklusive diesen) wirst du in die Datenschicht von Gatsby eintauchen, welche ein mächtiges Feature von Gatsby darstellt und dich mit Leichtigkeit Seiten aus Markdown, WordPress, Headless CMS, sowie vielen anderen Datenquellen, erstellen lässt.
+In den nächsten vier Teilen des Tutorials (inklusive diesem) wirst du in die Datenschicht von Gatsby eintauchen, welche ein mächtiges Feature von Gatsby darstellt und dich mit Leichtigkeit Seiten aus Markdown, WordPress, Headless CMS, sowie vielen anderen Datenquellen, erstellen lässt.
 
 **HINWEIS:** Gatsby’s Datenschicht wird mit GraphQL betrieben. Für ein ausführliches
-über GraphQL, empfehlen wir [How to GraphQL](https://www.howtographql.com/).
+Tutorial über GraphQL, empfehlen wir [How to GraphQL](https://www.howtographql.com/).
 
 ## Daten in Gatsby
 
-Eine Gatsby Website hat vier Teile: HTML, CSS, JS und Daten. Die erste Hälfte
+Eine Gatsby Website besteht vier aus Teilen: HTML, CSS, JS und Daten. Die erste Hälfte
 des Tutorials fokussierte sich auf die ersten drei. Nun, lass uns lernen wie
-Daten in Gatsby Websites verwendet werden können.
+Daten in Gatsby Webseiten eingebunden werden können.
 
 **Was sind Daten?**
 
@@ -41,11 +41,11 @@ du manchmal Daten *außerhalb* der Komponenten speichern und dann diese Daten *i
 Komponente bei Bedarf reinbringen.
 
 Wenn du eine Seite mit WordPress (so haben andere Beitragende
-eine schöne Oberfläche für das Hinzufügen & Warten der Inhalte) und Gatsby baust,
+eine schöne Oberfläche für das Hinzufügen & Pflegen der Inhalte) und Gatsby baust,
 sind die *Daten* für die Website (Seiten und Beiträge) in WordPress und du *ziehst*
 diese Daten bei Bedarf in deine Komponenten.
 
-Dateitypen wie Markdown, CSV, etc. sowie Datenbanken und APIs aller Arten, können
+Dateitypen wie Markdown, CSV, etc. sowie Datenbanken und Schnittstellen aller Arten, können
 als Datenquellen agieren.
 
 **Gatsby's Datenschicht lässt dich von diesen (und vielen anderen) Datenquellen,
@@ -64,12 +64,12 @@ Schau dir die [Nutzen von Gatsby ohne GraphQL](/docs/using-gatsby-without-graphq
 Wenn du eine kleine Website baust, stellt in dieser Anleitung beschriebene Vorgehensweise, eine effiziente Möglichkeit dar, mit Hilfe der `createPages` API unstrukturierte Daten einzubinden. Wenn die Website später komplexer werden sollte, du weitere komplexe Websites erstellst oder einfach deine Daten umwandeln willst, solltest du diese Schritte befolgen:
 
 1.  Siehe in der [Plugin Bibliothek](/plugins/) nach, ob es bereits Quellen-Plugins und/oder Transformer-Plugins gibt, die du nutzen möchtest
-2.  Falls es keine gibt, lese die [Plugin Authoring](/docs/creating-plugins/) Anleitung und ziehe es in Erwägung dein eigenes Plugin zu entwickeln!
+2.  Falls es keine gibt, lies die [Plugin Authoring](/docs/creating-plugins/) Anleitung und ziehe es in Erwägung dein eigenes Plugin zu entwickeln!
 
 ### Wie Gatsby's Datenschicht GraphQL nutzt, um Komponenten mit Daten zu versorgen
 
 Es gibt viele Möglichkeiten für das Laden der Daten innerhalb von React-Komponenten. Eine der meistverwendeten
-und wirksamen Möglichkeiten ist eine Technoligie namens [GraphQL](http://graphql.org/).
+und wirksamen Möglichkeiten ist eine Technologie namens [GraphQL](http://graphql.org/).
 
 GraphQL wurde von Facebook erfunden, um den Produktingenieuren zu helfen, notwendige Daten
 in die Kompontenten zu *ziehen*.
@@ -93,7 +93,7 @@ gatsby new tutorial-part-four https://github.com/gatsbyjs/gatsby-starter-hello-w
 cd tutorial-part-four
 ```
 
-Installiere danach einige notwendige Abhängigkeiten im Root-Verzeichnis des Projekts. Du wirst das Typography-Thema
+Installiere danach einige notwendige Abhängigkeiten im Root-Verzeichnis des Projekts. Du wirst das Typografie-Thema
 "Kirkham" nutzen und eine CSS-in-JS Bibliothek ausprobieren, ["Emotion"](https://emotion.sh/):
 
 ```shell
@@ -212,7 +212,7 @@ Nun kannst du mit Abfragen beginnen 😋
 
 Während der Entwicklung von Websites, möchtest du wahrscheinlich die häufig benutzten Teile der Daten wiederverwenden -- zum Beispiel den *Seitentitel*. Schau dir die `/about/` Seite an. Du wirst merken, dass du den Seitentitel (`Pandas essen viel`) in beiden Komponenten (Website Titel) und im `<h1 />` der `about.js` Seite (Seitentitel) hast.
 
-Aber was wäre, wenn du den Titel der Website in der Zukunft ändern möchtest? Du müsstest nach dem Titel in allen deinen Komponenten suchen und jede Instanz manuell ändern. Dies ist nicht nur mühselig, sondern auch fehleranfällig, im speziellen bei größeren und komplexeren Websites. Stattdessen, speicherst du den Titel an einem Ort und referenzierst diesen Ort in anderen Dateien; Ändere den Titel an einem einzigen Ort und Gatsby wird den aktualisierten Titel in den Dateien, die diesen referenzieren *erneuern*.
+Aber was wäre, wenn du den Titel der Website in der Zukunft ändern möchtest? Du müsstest nach dem Titel in allen deinen Komponenten suchen und jede Instanz manuell ändern. Dies ist nicht nur mühselig, sondern auch fehleranfällig, speziell bei größeren und komplexeren Websites. Stattdessen, speicherst du den Titel an einem Ort und referenzierst diesen Ort in anderen Dateien; Ändere den Titel an einem einzigen Ort und Gatsby wird den aktualisierten Titel in den Dateien, die diesen referenzieren *erneuern*.
 
 Der Ort für diese häufig verwendeten Teile der Daten ist das `siteMetadata` Objekt in der `gatsby-config.js`. Füge den Titel deiner Website in die `gatsby-config.js` Datei hinzu:
 
@@ -293,7 +293,7 @@ Seitenabfragen existieren außerhalb der Komponenten-Definition -- grundsätzlic
 ### Nutzung einer StaticQuery
 
 [StaticQuery](/docs/static-query/) ist eine neue API die mit Gatsby v2 eingeführt wurde und es ermöglicht, Komponenten die keine Seite darstellen (wie deine `layout.js` Komponente), mittels GraphQL-Abfragen mit Daten zu versorgen.
-Lass uns die neu vorgestellte Hook-Version - [`useStaticQuery`](/docs/use-static-query/) nutzen.
+Lass uns die neu vorgestellte Hook-Variante - [`useStaticQuery`](/docs/use-static-query/) nutzen.
 
 Leg los und passe deine `src/components/layout.js` Datei an, um den `useStaticQuery` Hook und die `{data.site.siteMetadata.title}` Referenz zu nutzen, die diese Daten nutzt. Wenn du fertig bist, sollte deine Datei wie folgt aussehen:
 
@@ -359,7 +359,7 @@ Erneut ein Erfolg! 🎉
 ![Seitentitel und Layouttitel beziehen nun beide den Wert von siteMetadata](site-metadata-two-titles.png)
 
 Warum nutzen wir zwei unterschiedliche Abfragen hier? Diese Beispiele waren eine
-schnelle Einführung zu den Abfragentypen, wie sie formattiert werden
+schnelle Einführung zu den Abfragetypen, wie sie formattiert werden
 und wo sie genutzt werden. Für den Augenblick, solltest du beachten,
 dass Seitenabfragen nur von Seiten durchgeführt werden können. Komponenten die
 keine Seite darstellen, wie Layout, können StaticQuery nutzen. Im [Teil 7](/tutorial/part-seven/) des Tutorials
@@ -369,7 +369,7 @@ Lass uns jedoch den echten Seitentitel wiederherstellen.
 
 Eines der Grundprinzipien von Gatsby ist, dass *Erschaffer eine unmittelbare Verbindung zu ihrer Kreation brauchen* ([Kudos an Bret Victor](http://blog.ezyang.com/2012/02/transcript-of-inventing-on-principle/)). In anderen Worten, wenn du eine Änderung in deinem Code machst, solltest du unmittelbar die Auswirkung dieser Änderung sehen. Du manipulierst den Input von Gatsby und siehst wie der neue Output auf dem Bildschirm erscheint.
 
-Dies findet fast überall statt, Änderungen die von dir durchgeführt werden, treten unmittelbar in Kraft. Bearbeite wieder die `gatsby-config.js` Datei, ändere dieses Mal den `title`zurück auf "Pandas essen viel". Die Änderung sollte sehr schnell auf den Seiten deiner Website erscheinen.
+Dies findet fast überall statt, Änderungen die von dir durchgeführt werden, treten unmittelbar in Kraft. Bearbeite wieder die `gatsby-config.js` Datei, ändere dieses Mal den `title` zurück auf "Pandas essen viel". Die Änderung sollte sehr schnell auf deiner Website erscheinen.
 
 ![Beide Titel sind nun auf Pandas essen viel gesetzt](pandas-eating-lots-titles.png)
 
