@@ -74,7 +74,7 @@ und wirksamen Möglichkeiten ist eine Technologie namens [GraphQL](http://graphq
 GraphQL wurde von Facebook erfunden, um den Produktingenieuren zu helfen, notwendige Daten
 in die Kompontenten zu *laden*.
 
-GraphQL ist eine **Q**uery **L**anguage (der *QL* Teil des Namens). Wenn du mit
+GraphQL ist eine **Q**uery **L**anguage (der *QL* Teil des Namens), also eine Sprache um Abfragen zu formulieren. Wenn du mit
 SQL vertraut bist, ist die Funktionsweise sehr ähnlich. Unter Anwendung von spezieller Syntax
 beschreibst du die Daten, die du in deiner Komponente haben willst und dann erhältst
 du diese Daten.
