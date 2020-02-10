@@ -12,7 +12,7 @@ die Dinge an vertrauter zu werden 😀
 Bislang hast du gelernt React.js einzusetzen und wie mächtig es ist, *eigene* Komponenten
 schreiben zu können, die als benutzerdefinierte Bausteine für Websites agieren.
 
-Mit Hilfe der CSS Modules hast du auch Styling Components erkunden können.
+Mit Hilfe der CSS Modules hast du auch erfahren, wie Komponenten gestyled werden können.
 
 ## Was beinhaltet dieses Tutorial?
 
