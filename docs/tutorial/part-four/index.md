@@ -35,36 +35,36 @@ Integers (`42`), Objekte (`{ pizza: true }`), etc.
 Für den Zweck des Arbeitens mit Gatsby ist jedoch "Alles was außerhalb einer React-Komponente lebt",
 eine viel nützlichere Antwort.
 
-Bisher, has du *direkt* in den Komponenten Text geschrieben und Bilder hinzugefügt.
+Bisher, has du Text *direkt* in die Komponenten geschrieben und Bilder hinzugefügt.
 Dies ist eine *hervorragende* Möglichkeit Websites zu entwickeln. Nichtsdestotrotz, willst
 du manchmal Daten *außerhalb* der Komponenten speichern und dann diese Daten *in* die
-Komponente bei Bedarf reinbringen.
+Komponente bei Bedarf einbinden.
 
 Wenn du eine Seite mit WordPress (so haben andere Beitragende
 eine schöne Oberfläche für das Hinzufügen & Pflegen der Inhalte) und Gatsby baust,
-sind die *Daten* für die Website (Seiten und Beiträge) in WordPress und du *ziehst*
-diese Daten bei Bedarf in deine Komponenten.
+sind die *Daten* für die Website (Seiten und Beiträge) in WordPress und du *bindest*
+diese Daten bei Bedarf in deine Komponenten ein.
 
 Dateitypen wie Markdown, CSV, etc. sowie Datenbanken und Schnittstellen aller Arten, können
 als Datenquellen agieren.
 
 **Gatsby's Datenschicht lässt dich von diesen (und vielen anderen) Datenquellen,
-Daten in deine Komponenten beziehen**, in jeder beliebiger Gestalt und Form.
+Daten in deine Komponenten einbinden**, in jeder beliebiger Gestalt und Form.
 
 ## Nutzen von unstrukturierten Daten vs GraphQL
 
 ### Muss ich GraphQL und Quellen-Plugins nutzen, um Daten in eine Gatsby Website einzubinden?
 
-Natürlich nicht! Du kannst die node API `createPages` nutzen, um unstrukturierte Daten auf Gatsby Seiten direkt zu beziehen, anstatt eine GraphQL Datenschicht zu nutzen. Dies stellt eine gute Wahl für kleine Websites dar, während GraphQL und Quellen-Plugins dir beim Zeitsparen helfen, wenn es sich um komplexe Websites handelt.
+Natürlich nicht! Du kannst die node API `createPages` nutzen, um unstrukturierte Daten auf Gatsby Seiten direkt zu beziehen, anstatt die GraphQL Datenschicht zu nutzen. Dies stellt eine gute Wahl für kleine Websites dar, während GraphQL und Quellen-Plugins dir beim Zeitsparen helfen, wenn es sich um komplexe Websites handelt.
 
-Schau dir die [Nutzen von Gatsby ohne GraphQL](/docs/using-gatsby-without-graphql/) Anleitung an, um zu lernen, wie du Daten auf deiner Gatsby Website mittels node `createPages` API beziehen kannst und um eine Beispielseite zu sehen.
+Schau dir die Anleitung [Nutzen von Gatsby ohne GraphQL](/docs/using-gatsby-without-graphql/) an, um zu lernen, wie du Daten auf deiner Gatsby Website mittels node `createPages` API beziehen kannst und um eine Beispielseite zu sehen.
 
 ### Wann verwende ich unstrukturierte Daten und wann GraphQL?
 
 Wenn du eine kleine Website baust, stellt in dieser Anleitung beschriebene Vorgehensweise, eine effiziente Möglichkeit dar, mit Hilfe der `createPages` API unstrukturierte Daten einzubinden. Wenn die Website später komplexer werden sollte, du weitere komplexe Websites erstellst oder einfach deine Daten umwandeln willst, solltest du diese Schritte befolgen:
 
-1.  Siehe in der [Plugin Bibliothek](/plugins/) nach, ob es bereits Quellen-Plugins und/oder Transformer-Plugins gibt, die du nutzen möchtest
-2.  Falls es keine gibt, lies die [Plugin Authoring](/docs/creating-plugins/) Anleitung und ziehe es in Erwägung dein eigenes Plugin zu entwickeln!
+1.  Sieh in der [Plugin Bibliothek](/plugins/) nach, ob es bereits Quellen-Plugins und/oder Transformer-Plugins gibt, die du nutzen möchtest
+2.  Falls es keine gibt, lies die Anleitung zum [Erstellen von Plugins](/docs/creating-plugins/) und überlege, ob es sinnvoll sein könnte dein eigenes Plugin zu entwickeln!
 
 ### Wie Gatsby's Datenschicht GraphQL nutzt, um Komponenten mit Daten zu versorgen
 
@@ -72,7 +72,7 @@ Es gibt viele Möglichkeiten für das Laden der Daten innerhalb von React-Kompon
 und wirksamen Möglichkeiten ist eine Technologie namens [GraphQL](http://graphql.org/).
 
 GraphQL wurde von Facebook erfunden, um den Produktingenieuren zu helfen, notwendige Daten
-in die Kompontenten zu *ziehen*.
+in die Kompontenten zu *laden*.
 
 GraphQL ist eine **Q**uery **L**anguage (der *QL* Teil des Namens). Wenn du mit
 SQL vertraut bist, ist die Funktionsweise sehr ähnlich. Unter Anwendung von spezieller Syntax
@@ -93,14 +93,14 @@ gatsby new tutorial-part-four https://github.com/gatsbyjs/gatsby-starter-hello-w
 cd tutorial-part-four
 ```
 
-Installiere danach einige notwendige Abhängigkeiten im Root-Verzeichnis des Projekts. Du wirst das Typografie-Thema
+Installiere danach einige notwendige Abhängigkeiten im Haupt-Verzeichnis des Projekts. Du wirst das Typografie-Thema
 "Kirkham" nutzen und eine CSS-in-JS Bibliothek ausprobieren, ["Emotion"](https://emotion.sh/):
 
 ```shell
 npm install --save gatsby-plugin-typography typography react-typography typography-theme-kirkham gatsby-plugin-emotion @emotion/core
 ```
 
-Setze eine Website auf die der am Ende des [Teil Drei](/tutorial/part-three) Tutorials ähnlich ist. Diese Website hat eine Layout-Komponente und zwei Seiten-Komponenten:
+Setze eine Website auf, die der am Ende des [dritten Teils](/tutorial/part-three) des Tutorials ähnlich ist. Diese Website hat eine Layout-Komponente und zwei Seiten-Komponenten:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
@@ -184,7 +184,7 @@ export default typography
 export const rhythm = typography.rhythm
 ```
 
-`gatsby-config.js` (muss im Root-Verzeichnis deines Projektes sein, nicht unter src)
+`gatsby-config.js` (muss sich im Haupt-Verzeichnis deines Projektes befinden; nicht unter src)
 
 ```javascript:title=gatsby-config.js
 module.exports = {
@@ -200,7 +200,7 @@ module.exports = {
 }
 ```
 
-Füge die oberen Dateien hinzu und führe danach wie immer `gatsby develop` aus, du solltest nun folgendes sehen:
+Füge die oben genannten Dateien hinzu und führe danach wie immer `gatsby develop` aus. Du solltest nun folgendes sehen:
 
 ![start](start.png)
 
@@ -239,7 +239,7 @@ Starte den Entwicklungsserver neu.
 
 ### Nutzung einer Seitenabfrage
 
-Nun ist der Titel der Website bereit für eine Abfrage. Füge diesen zu der `about.js` Datei hinzu in dem du eine [Seitenabfrage](/docs/page-query) nutzt:
+Nun ist der Titel der Website bereit für eine Abfrage. Füge diesen zu der `about.js` Datei hinzu, indem du eine [Seitenabfrage](/docs/page-query) nutzt:
 
 ```jsx:title=src/pages/about.js
 import React from "react"
@@ -288,7 +288,7 @@ Die grundlegende GraphQL-Abfrage welche die Änderungen von `title` in deiner `a
 
 > 💡 Im [fünften Teil](/tutorial/part-five/#introducing-graphiql) wirst du ein Tool kennenlernen, welches es dir ermöglicht, die durch GraphQL verfügbaren Daten interaktiv zu entdecken und Abfragen, wie die vorherige zu formulieren.
 
-Seitenabfragen existieren außerhalb der Komponenten-Definition -- grundsätzlich am Ende einer Seitenkomponente Datei -- und nur in Seitenkomponenten verfügbar.
+Seitenabfragen existieren außerhalb der Komponenten-Definition -- grundsätzlich am Ende einer Seitenkomponente Datei -- sie sind nur in Seitenkomponenten verfügbar.
 
 ### Nutzung einer StaticQuery
 
@@ -354,22 +354,22 @@ export default ({ children }) => {
 // highlight-end
 ```
 
-Erneut ein Erfolg! 🎉
+Ein weiterer Erfolg! 🎉
 
 ![Seitentitel und Layouttitel beziehen nun beide den Wert von siteMetadata](site-metadata-two-titles.png)
 
-Warum nutzen wir zwei unterschiedliche Abfragen hier? Diese Beispiele waren eine
-schnelle Einführung zu den Abfragetypen, wie sie formattiert werden
+Warum nutzen wir hier zwei unterschiedliche Abfragen? Diese Beispiele waren eine
+kurze Einführung zu den Abfragetypen, wie sie formatiert
 und wo sie genutzt werden. Für den Augenblick, solltest du beachten,
 dass Seitenabfragen nur von Seiten durchgeführt werden können. Komponenten die
 keine Seite darstellen, wie Layout, können StaticQuery nutzen. Im [Teil 7](/tutorial/part-seven/) des Tutorials
 werden diese ausführlicher behandelt.
 
-Lass uns jedoch den echten Seitentitel wiederherstellen.
+Lass uns nun jedoch den echten Seitentitel wiederherstellen.
 
 Eines der Grundprinzipien von Gatsby ist, dass *Erschaffer eine unmittelbare Verbindung zu ihrer Kreation brauchen* ([Kudos an Bret Victor](http://blog.ezyang.com/2012/02/transcript-of-inventing-on-principle/)). In anderen Worten, wenn du eine Änderung in deinem Code machst, solltest du unmittelbar die Auswirkung dieser Änderung sehen. Du manipulierst den Input von Gatsby und siehst wie der neue Output auf dem Bildschirm erscheint.
 
-Dies findet fast überall statt, Änderungen die von dir durchgeführt werden, treten unmittelbar in Kraft. Bearbeite wieder die `gatsby-config.js` Datei, ändere dieses Mal den `title` zurück auf "Pandas essen viel". Die Änderung sollte sehr schnell auf deiner Website erscheinen.
+Dies findet fast überall statt, Änderungen die von dir durchgeführt werden, werden unmittelbar sichtbar. Bearbeite wieder die `gatsby-config.js` Datei und ändere dieses Mal `title` zurück auf "Pandas essen viel". Die Änderung sollte sehr schnell auf deiner Website erscheinen.
 
 ![Beide Titel sind nun auf Pandas essen viel gesetzt](pandas-eating-lots-titles.png)
 
