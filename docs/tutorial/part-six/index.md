@@ -6,7 +6,7 @@ disableTableOfContents: true
 
 > Dieses Tutorial ist Teil einer Reihe über die Datenschicht von Gatsby. Stellen Sie sicher, dass Sie [Teil 4](/tutorial/part-four/) und [Teil 5](/tutorial/part-five/) durchgegangen sind, bevor Sie hier fortfahren.
 
-## Was ist in diesem Tutorial?
+## Um was geht es in diesem Tutorial?
 
 Das vorherige Tutorial zeigte, wie Quell-Plugins Daten _in_ Gatsbys Datensystem bringen. In diesem Tutorial erfahren Sie, wie Transformer-Plugins den Rohinhalt von Quell-Plugins _transformieren_. Die Kombination aus Quell-Plugins und Transformer-Plugins kann alle Datenquellen und -transformationen verarbeiten, die Sie beim Erstellen einer Gatsby-Site benötigen.
 
