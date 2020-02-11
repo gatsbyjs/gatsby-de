@@ -176,7 +176,7 @@ Welches sieht gut aus! Außer ... die Reihenfolge der Beiträge ist falsch.
 
 Dies ist jedoch leicht zu beheben. Wenn Sie eine Verbindung eines bestimmten Typs abfragen, können Sie der GraphQL-Abfrage eine Reihe von Argumenten übergeben. Sie können Knoten `sort` und `filter`, die Anzahl der zu überspringenden Knoten festlegen und das `limit` für die Anzahl der abzurufenden Knoten festlegen. Mit diesen leistungsstarken Operatoren können Sie beliebige Daten auswählen - in dem Format, das Sie benötigen.
 
-Ändern Sie in der GraphQL-Abfrage Ihrer Indexseite `allMarkdownRemark` in `allMarkdownRemark` (sort: {fields: [frontmatter___date], order: DESC}). _Hinweis: Zwischen `frontmatter` und` date` gibt es 3 Unterstriche._ Speichern Sie dies und die Sortierreihenfolge sollte festgelegt sein.
+Ändern Sie in der GraphQL-Abfrage Ihrer Indexseite `allMarkdownRemark` in `allMarkdownRemark` (sort: {fields: [frontmatter___date], order: DESC}). _Hinweis: Zwischen `frontmatter` und` date` gibt es 3 Unterstriche._ Speichern Sie die Abfrage und die Sortierreihenfolge sollte nun richtig sein.
 
 Versuchen Sie, GraphiQL zu öffnen und mit verschiedenen Sortieroptionen zu spielen. `allFile` lässt sich mit mit anderen Verbindungen sortieren.
 
