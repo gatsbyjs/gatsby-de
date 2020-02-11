@@ -16,7 +16,7 @@ Oft ist das Format der Daten, die Sie von Quellen-Plugins erhalten, nicht das, w
 
 Um dies zu ermöglichen, unterstützt Gatsby Transformer-Plugins welche die rohen Daten von Quellen-Plugins entgegen nehmen und in etwas anderes _transformieren_ können.
 
-Zum Beispiel Abschriften. Markdown ist schön einzuschreiben, aber wenn man einen baut Seite mit, müssen Sie den Markdown HTML sein.
+Zum Beispiel Markdown. Markdown schreibt sich leicht, aber wenn man einen baut Seite, müssen Sie die Markdown Dateien in HTML umgewandelt werden.
 
 Fügen Sie Ihrer Site unter eine Abschriften-Datei hinzu
 `src/pages/sweet-pandas-eating-sweets.md` (Dies wird zu Ihrem ersten Abschlag Blogeintrag)
