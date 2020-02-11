@@ -83,7 +83,7 @@ In Ordnung! Hoffentlich fangen einige Grundlagen an, sich zu etablieren. Quell-P
 
 ## Erstellen Sie eine Liste der Markdown-Dateien Ihrer Site in `src/pages/index.js`
 
-Jetzt müssen Sie eine Liste Ihrer Markdown-Dateien auf der Startseite erstellen. Wie viele 87 Blogs, möchten Sie mit einer Liste von Links auf der Titelseite enden, die auf jeden zeigen 88 Blogeintrag. Mit GraphQL können Sie _query_ für die aktuelle Liste der Abschriften Blog 87 Beiträge, sodass Sie die Liste nicht manuell pflegen müssen.
+Jetzt müssen Sie eine Liste Ihrer Markdown-Dateien auf der Startseite erstellen. Wie viele Blogs, möchten Sie mit einer Liste von Links auf der Titelseite enden, die auf jeden Blogeintrag verlinken. Mit GraphQL können Sie _query_ für die aktuelle Liste der Blog-Beiträge abfragen, sodass Sie die Liste nicht manuell pflegen müssen.
 
 Wie bei der `src/pages/my-files.js` Seite ersetzen `src/pages/index.js` mit Im Folgenden wird eine GraphQL-Abfrage mit anfänglichem HTML und Stil hinzugefügt.
 
