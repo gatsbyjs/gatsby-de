@@ -71,7 +71,7 @@ module.exports = {
 }
 ```
 
-Starten Sie den Entwicklungsserver neu, aktualisieren Sie GraphiQL (oder öffnen Sie es erneut), und sehen Sie nach bei der Autovervollständigung:
+Starten Sie den Entwicklungsserver neu, aktualisieren Sie GraphiQL (oder öffnen Sie es erneut), und schauen Sie sich die Autovervollständigungen an:
 
 ![markdown-autocomplete](markdown-autocomplete.png)
 
