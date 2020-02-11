@@ -4,7 +4,7 @@ typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-> Dieses Tutorial ist Teil einer Reihe über die Datenschicht von Gatsby. Stellen Sie sicher, dass Sie durchgegangen sind [teil 4](/tutorial/part-four/) und [teil 5](/tutorial/part-five/) bevor Sie hier fortfahren.
+> Dieses Tutorial ist Teil einer Reihe über die Datenschicht von Gatsby. Stellen Sie sicher, dass Sie [Teil 4](/tutorial/part-four/) und [Teil 5](/tutorial/part-five/) durchgegangen sind, bevor Sie hier fortfahren.
 
 ## Was ist in diesem Tutorial?
 
