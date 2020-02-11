@@ -155,7 +155,7 @@ Nun sollte die Startseite so aussehen:
 
 ![frontpage](frontpage.png)
 
-Aber dein einziger Blog-Beitrag sieht ein bisschen einsam aus. Also lasst uns noch einen hinzufügen bei
+Aber Ihr einziger Blog-Beitrag sieht ein bisschen einsam aus. Also lassen Sie uns noch einen hinzufügen bei
 `src/pages/pandas-and-bananas.md`
 
 ```markdown:title=src/pages/pandas-and-bananas.md
