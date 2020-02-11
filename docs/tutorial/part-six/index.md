@@ -20,7 +20,7 @@ Zum Beispiel Markdown. Markdown schreibt sich leicht, aber wenn man einen baut S
 
 Fügen Sie Ihrer Site unter eine Abschriften-Datei hinzu
 `src/pages/sweet-pandas-eating-sweets.md` (Dies wird zu Ihrem ersten Abschlag Blogeintrag)
-und lernen, wie man es mit Hilfe von Transformer-Plugins und in HTML umwandelt GraphQL.
+und lernen, wie, mit Hilfe von Transformer-Plugins und GraphQL, die Daten in HTML umwandelt werden.
 
 ```markdown:title=src/pages/sweet-pandas-eating-sweets.md
 ---
