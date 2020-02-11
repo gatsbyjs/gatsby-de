@@ -14,7 +14,7 @@ Das vorherige Tutorial zeigte, wie Quellen-Plugins Daten _in_ Gatsbys Datensyste
 
 Oft ist das Format der Daten, die Sie von Quellen-Plugins erhalten, nicht das, was Sie brauchen, um Ihre Website zu erstellen. Mit dem Quellen-Plugin des Dateisystems können Sie Daten _über_ Dateien abfragen. Aber was ist, wenn Sie Daten _aus_ Dateien abfragen möchten?
 
-Um dies zu ermöglichen, unterstützt Gatsby Transformer-Plugins, die Raw-Dateien akzeptieren Inhalte aus Quell-Plugins und _transformieren_ sie in etwas Besseres.
+Um dies zu ermöglichen, unterstützt Gatsby Transformer-Plugins welche die rohen Daten von Quellen-Plugins entgegen nehmen und in etwas anderes _transformieren_ können.
 
 Zum Beispiel Abschriften. Markdown ist schön einzuschreiben, aber wenn man einen baut Seite mit, müssen Sie den Markdown HTML sein.
 
