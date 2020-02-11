@@ -79,7 +79,7 @@ Wählen Sie `allMarkdownRemark` erneut aus und führen Sie es wie für `allFile`
 
 ![markdown-query](markdown-query.png)
 
-In Ordnung! Hoffentlich fangen einige Grundlagen an, sich zu etablieren. Quell-Plugins bringen Daten _in_ das Gatsby-Datensystem. Dieses Muster kann alle Datenquellen und Datenumwandlungen verarbeiten, die Sie beim Erstellen einer Gatsby-Site benötigen.
+In Ordnung! Hoffentlich fangen einige Grundlagen an, sich zu etablieren. Quellen-Plugins bringen Daten _in_ das Gatsby-Datensystem. Dieses Muster kann alle Datenquellen und -umwandlungen verarbeiten, die Sie beim Erstellen einer Gatsby-Site benötigen.
 
 ## Erstellen Sie eine Liste der Markdown-Dateien Ihrer Site in `src/pages/index.js`
 
