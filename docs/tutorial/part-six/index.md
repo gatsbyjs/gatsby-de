@@ -18,7 +18,7 @@ Um dies zu ermöglichen, unterstützt Gatsby Transformer-Plugins, welche die Dat
 
 Zum Beispiel Markdown. Markdown schreibt sich leicht, aber wenn du eine Website baust, müssen Sie die Markdown-Dateien in HTML umgewandelt werden.
 
-Fügen Sie Ihrer Site unter eine Markdown-Datei unter
+Füge deiner Website unter eine Markdown-Datei unter
 `src/pages/sweet-pandas-eating-sweets.md` hinzu. (Dies wird Ihr erster Markdown Blogeintrag)
 und lernen, wie, mit Hilfe von Transformer-Plugins und GraphQL, die Daten in HTML umwandelt werden.
 
