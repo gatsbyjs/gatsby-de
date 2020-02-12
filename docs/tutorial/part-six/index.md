@@ -16,7 +16,7 @@ Oft ist das Format der Daten, die von Quellen-Plugins zurückgegeben werden, nic
 
 Um dies zu ermöglichen, unterstützt Gatsby Transformer-Plugins, welche die Daten von Quellen-Plugins entgegen nehmen und in etwas anderes _transformieren_ können.
 
-Zum Beispiel Markdown. Markdown schreibt sich leicht, aber wenn man einen baut Seite, müssen Sie die Markdown Dateien in HTML umgewandelt werden.
+Zum Beispiel Markdown. Markdown schreibt sich leicht, aber wenn du eine Website baust, müssen Sie die Markdown-Dateien in HTML umgewandelt werden.
 
 Fügen Sie Ihrer Site unter eine Markdown-Datei unter
 `src/pages/sweet-pandas-eating-sweets.md` hinzu. (Dies wird Ihr erster Markdown Blogeintrag)
