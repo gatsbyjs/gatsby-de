@@ -190,7 +190,7 @@ Versuchen Sie, eine neue Seite mit einem Blogeintrag zu erstellen, und sehen Sie
 
 Das ist toll! Sie haben gerade eine schöne Indexseite erstellt, auf der Sie Ihre abgefragten Dateien als eine Liste von Blog-Beitrags-Titeln und Text-Auszügen darstellen. Sie möchten jedoch nicht nur Text-Auszüge sehen, sondern auch tatsächliche Seiten für Ihre Markdown-Dateien.
 
-Sie können weitere Seiten erstellen, indem Sie die React-Komponenten in `src/pages` platzieren. 
+Du kannst weitere Seiten erstellen, indem du React-Komponenten in `src/pages` erstellst. 
 Als Nächstes lernst du, wie sich _programmatisch_ Seiten aus _Daten_ erstellen lassen. 
 Gatsby ist allerdings _nicht_ darauf beschränkt, Seiten aus Dateien zu erstellen, wie dies bei vielen statischen Site-Generatoren der Fall ist. 
 Mit Gatsby kannst du GraphQL verwenden, um deine _Daten_ abzufragen und die Ergebnisse _Seiten_ zuzuordnen - alles zur Erstellungszeit.
