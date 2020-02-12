@@ -75,7 +75,7 @@ Starte den Entwicklungsserver neu, aktualisiere GraphiQL (oder öffne es erneut)
 
 ![markdown-autocomplete](markdown-autocomplete.png)
 
-Wählen Sie `allMarkdownRemark` erneut aus und führen Sie es wie für `allFile` aus. Sie wirden dort die Markdown-Datei sehen, die Sie gerade hinzugefügt haben. Schauen Sie sich die Felder, die auf dem `MarkdownRemark` Knoten verfügbar sind, an.
+Wähle `allMarkdownRemark` erneut aus und führe es erneut, wie für `allFile`, aus. Du wirst dort die Markdown-Datei sehen, die du gerade hinzugefügt hast. Schau dir die Felder, die auf dem `MarkdownRemark` Knoten verfügbar sind, an.
 
 ![markdown-query](markdown-query.png)
 
