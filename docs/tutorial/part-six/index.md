@@ -12,7 +12,7 @@ Das vorherige Tutorial zeigte, wie Quellen-Plugins Daten _in_ Gatsbys Datensyste
 
 ## Transformer plugins
 
-Oft ist das Format der Daten, die Sie von Quellen-Plugins erhalten, nicht das, was Sie brauchen, um Ihre Website zu erstellen. Mit dem Quellen-Plugin des Dateisystems können Sie Daten _über_ Dateien abfragen. Aber was ist, wenn Sie Daten _aus_ Dateien abfragen möchten?
+Oft ist das Format der Daten, die von Quellen-Plugins zurückgegeben werden, nicht das, was du brauchst, um deine Website zu erstellen. Mit dem Dateisystems Quellen-Plugin kannst du Daten _über_ Dateien abfragen. Aber was ist, wenn du Daten _aus_ Dateien abfragen möchtest?
 
 Um dies zu ermöglichen, unterstützt Gatsby Transformer-Plugins, welche die Daten von Quellen-Plugins entgegen nehmen und in etwas anderes _transformieren_ können.
 
