@@ -174,7 +174,7 @@ seem to really enjoy bananas!
 
 Das Ergebnis sieht gut aus! Außer, dass die Reihenfolge der Beiträge nicht stimmt.
 
-Dies ist jedoch leicht zu beheben. Wenn Sie eine Verbindung eines bestimmten Typs abfragen, können Sie der GraphQL-Abfrage eine Reihe von Argumenten übergeben. Sie können die Knoten `sort` und `filter`, die Anzahl der zu überspringenden Knoten und das `limit` für die Anzahl der abzurufenden Knoten festlegen. Mit diesen leistungsstarken Operatoren können Sie beliebige Daten auswählen - in dem Format, das Sie benötigen.
+Dies lässt jedoch leicht beheben. Um eine Verbindung eines bestimmten Typs abzufragen, kannst du der GraphQL-Abfrage eine Reihe von Argumenten übergeben. Du kannst den Knoten mit `sort` und `filter`, die Anzahl der zu überspringenden Knoten und das `limit` für die Anzahl der abzurufenden Knoten festlegen. Mit diesen leistungsstarken Operatoren kannst du beliebige Daten abfragen - in dem Format, das du benötigst.
 
 Ändern Sie in der GraphQL-Abfrage Ihrer Indexseite `allMarkdownRemark` in `allMarkdownRemark` (sort: {fields: [frontmatter___date], order: DESC}). _Hinweis: Zwischen `frontmatter` und` date` gibt es 3 Unterstriche._ Speichern Sie die Abfrage und die Sortierreihenfolge sollte nun richtig sein.
 
