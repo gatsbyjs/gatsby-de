@@ -36,7 +36,7 @@ Here's a video of a panda eating sweets.
 ```
 
 Wenn du die Datei gespeichert hast, öffne erneut `/my-files/` - die neu erstellte Markdown-Datei befindet sich in der Tabelle. Dies ist eine sehr leistungsstarke Funktion von Gatsby. Wie im vorherigen Beispiel `siteMetadata` können Quellen-Plugins Daten live neu laden.
-`gatsby-source-filesystem` sucht immer nach neuen Dateien und wann Sie führen Ihre Abfragen erneut aus.
+`gatsby-source-filesystem` sucht kontinuierlich nach neuen Dateien und führt Ihre Abfragen erneut aus, wenn Dateien neu erstellt oder verändert wurden.
 
 Fügen Sie ein Transformer-Plugin hinzu, das Markdown-Dateien umwandeln kann:
 
