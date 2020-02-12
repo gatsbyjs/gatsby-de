@@ -184,7 +184,7 @@ Weitere Informationen zu unseren Abfrageoperatoren finden Sie in unserer [GraphQ
 
 ## Herausforderung
 
-Versuchen Sie, eine neue Seite mit einem Blogeintrag zu erstellen, und sehen Sie, was mit der Liste der Blogeinträge auf der Startseite geschieht!
+Versuche, eine neue Seite mit einem Blogeintrag zu erstellen, und sieh, was mit der Liste der Blogbeiträge auf der Startseite passiert!
 
 ## Was kommt als nächstes
 
