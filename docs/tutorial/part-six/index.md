@@ -193,6 +193,6 @@ Das ist toll! Sie haben gerade eine schöne Indexseite erstellt, auf der Sie Ihr
 Sie können weitere Seiten erstellen, indem Sie die React-Komponenten in `src/pages` platzieren. 
 Als Nächstes lernst du, wie sich _programmatisch_ Seiten aus _Daten_ erstellen lassen. 
 Gatsby ist allerdings _nicht_ darauf beschränkt, Seiten aus Dateien zu erstellen, wie dies bei vielen statischen Site-Generatoren der Fall ist. 
-Mit Gatsby können Sie GraphQL verwenden, um Ihre _Daten_ abzufragen und die Abfrageergebnisse _Seiten_ zuzuordnen - alles zur Erstellungszeit.
+Mit Gatsby kannst du GraphQL verwenden, um deine _Daten_ abzufragen und die Ergebnisse _Seiten_ zuzuordnen - alles zur Erstellungszeit.
 Dies ist eine wirklich mächtige Idee. 
 Im nächsten Tutorial werden die Vorraussetzungen und Möglichkeiten erläutert, mit denen [Seiten programmatisch aus Daten erstellt werden](/tutorial/part-seven/) können.
