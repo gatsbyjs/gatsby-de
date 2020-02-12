@@ -172,7 +172,7 @@ seem to really enjoy bananas!
 
 ![two-posts](two-posts.png)
 
-Das Ergebnis sieht gut aus! Außer dass die Reihenfolge der Beiträge falsch ist.
+Das Ergebnis sieht gut aus! Außer, dass die Reihenfolge der Beiträge nicht stimmt.
 
 Dies ist jedoch leicht zu beheben. Wenn Sie eine Verbindung eines bestimmten Typs abfragen, können Sie der GraphQL-Abfrage eine Reihe von Argumenten übergeben. Sie können die Knoten `sort` und `filter`, die Anzahl der zu überspringenden Knoten und das `limit` für die Anzahl der abzurufenden Knoten festlegen. Mit diesen leistungsstarken Operatoren können Sie beliebige Daten auswählen - in dem Format, das Sie benötigen.
 
