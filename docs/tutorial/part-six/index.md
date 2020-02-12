@@ -180,7 +180,7 @@ Dies lässt jedoch leicht beheben. Um eine Verbindung eines bestimmten Typs abzu
 
 Öffne GraphiQL noch einmal und spiel mit den verschiedenen Sortieroptionen. `allFile` lässt sich mit anderen Verbindungen sortieren.
 
-Weitere Informationen zu unseren Abfrageoperatoren finden Sie in unserer [GraphQL reference guide.](/docs/graphql-reference/)
+Weitere Informationen zu unseren Abfrageoperatoren findest du in unserer [GraphQL Referenz](/docs/graphql-reference/).
 
 ## Herausforderung
 
