@@ -178,7 +178,7 @@ Dies lässt jedoch leicht beheben. Um eine Verbindung eines bestimmten Typs abzu
 
 Änder in der GraphQL-Abfrage deiner Startseite `allMarkdownRemark` in `allMarkdownRemark` (sort: {fields: [frontmatter___date], order: DESC}). _Hinweis: Zwischen `frontmatter` und` date` sind 3 Unterstriche._ Speiche die Abfrage und nun sollte die Sortierreihenfolge richtig sein.
 
-Versuchen Sie, GraphiQL zu öffnen und mit verschiedenen Sortieroptionen zu spielen. `allFile` lässt sich mit mit anderen Verbindungen sortieren.
+Öffne GraphiQL noch einmal und spiel mit den verschiedenen Sortieroptionen. `allFile` lässt sich mit anderen Verbindungen sortieren.
 
 Weitere Informationen zu unseren Abfrageoperatoren finden Sie in unserer [GraphQL reference guide.](/docs/graphql-reference/)
 
