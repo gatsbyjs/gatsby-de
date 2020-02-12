@@ -81,7 +81,7 @@ Wähle `allMarkdownRemark` erneut aus und führe es erneut, wie für `allFile`, 
 
 Super! Hoffentlich etablieren sich damit die ersten Grundlagen. Quellen-Plugins bringen Daten _in_ das Gatsby-Datensystem. Mit diesem Schema können alle Datenquellen und -umwandlungen verarbeitet werden, die beim Erstellen einer Gatsby Website benötigt werden.
 
-## Erstellen Sie eine Liste der Markdown-Dateien Ihrer Site in `src/pages/index.js`
+## Erstell eine Liste der Markdown-Dateien deiner Website in `src/pages/index.js`
 
 Jetzt müssen Sie eine Liste Ihrer Markdown-Dateien auf der Startseite erstellen. Wie viele Blogs, möchten Sie mit einer Liste von Links auf der Titelseite enden, die auf jeden Blogeintrag verlinken. Mit GraphQL können Sie _query_ für die aktuelle Liste der Blog-Beiträge abfragen, sodass Sie die Liste nicht manuell pflegen müssen.
 
