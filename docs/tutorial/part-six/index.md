@@ -8,7 +8,7 @@ disableTableOfContents: true
 
 ## Um was geht es in diesem Tutorial?
 
-Das vorherige Tutorial zeigte, wie Quellen-Plugins Daten _in_ Gatsbys Datensystem bringen. In diesem Tutorial erfahren Sie, wie Transformer-Plugins den Inhalt von Quellen-Plugins _transformieren_. Die Kombination aus Quellen-Plugins und Transformer-Plugins kann alle Datenquellen und -transformationen verarbeiten, die beim Erstellen einer Gatsby-Site benötigt werden.
+Das vorherige Tutorial hat gezeigt, wie Quellen-Plugins Daten _in_ Gatsbys Datensystem bringen. In diesem Tutorial erfährst du, wie Transformer-Plugins den Inhalt von Quellen-Plugins _transformieren_. Die Kombination aus Quellen-Plugins und Transformer-Plugins kann alle Datenquellen und -transformationen verarbeiten, die beim Erstellen einer Gatsby-Site benötigt werden.
 
 ## Transformer plugins
 
