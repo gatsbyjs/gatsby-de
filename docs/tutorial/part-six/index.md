@@ -44,7 +44,7 @@ Füge nun ein Transformer-Plugin hinzu, das Markdown-Dateien umwandeln kann:
 npm install --save gatsby-transformer-remark
 ```
 
-Fügen Sie es dann, wie gewohnt, in die `gatsby-config.js` Folgendes ein:
+Füge dann, wie gewohnt, in die `gatsby-config.js` Folgendes ein:
 
 ```javascript:title=gatsby-config.js
 module.exports = {
