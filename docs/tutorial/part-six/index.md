@@ -85,7 +85,7 @@ Super! Hoffentlich etablieren sich damit die ersten Grundlagen. Quellen-Plugins 
 
 Jetzt sollst du eine Liste deiner Markdown-Dateien auf der Startseite erstellen. Wie in vielen Blogs, soll auf der Startseite eine Liste von Links, die auf jeden Blogeintrag verlinken, angezeigt werden. Mit GraphQL kannst du _query_ für eine aktuelle Liste von Blog-Beiträge abfragen, sodass die Liste nicht manuell gepflegt werden muss.
 
-Wie bei der `src/pages/my-files.js` Seite ersetzen `src/pages/index.js` mit Im Folgenden wird eine GraphQL-Abfrage mit anfänglichem HTML und Stil hinzugefügt.
+Wie schon bei der Seite `src/pages/my-files.js` ersetze nun in `src/pages/index.js` mit dem Folgenden, um eine eine GraphQL-Abfrage, mit HTML und CSS, hinzuzufügen.
 
 ```jsx:title=src/pages/index.js
 import React from "react"
