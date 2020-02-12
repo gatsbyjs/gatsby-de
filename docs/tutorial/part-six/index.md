@@ -20,7 +20,7 @@ Zum Beispiel Markdown. Markdown schreibt sich leicht, aber wenn du eine Website 
 
 Füge deiner Website unter eine Markdown-Datei unter
 `src/pages/sweet-pandas-eating-sweets.md` hinzu. (Dies wird dein erster Markdown Blogbeitrag)
-und lernen, wie, mit Hilfe von Transformer-Plugins und GraphQL, die Daten in HTML umwandelt werden.
+und lerne, wie mit Hilfe von Transformer-Plugins und GraphQL, die Daten in HTML umwandelt werden.
 
 ```markdown:title=src/pages/sweet-pandas-eating-sweets.md
 ---
