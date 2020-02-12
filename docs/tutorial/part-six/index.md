@@ -188,7 +188,7 @@ Versuchen Sie, eine neue Seite mit einem Blogeintrag zu erstellen, und sehen Sie
 
 ## Was kommt als nächstes
 
-Das ist toll! Sie haben gerade eine schöne Indexseite erstellt, auf der Sie Ihre abgefragten Dateien als eine Liste von Blog-Beitrags-Titeln und Text-Auszügen darstellen. Sie möchten jedoch nicht nur Text-Auszüge sehen, sondern auch tatsächliche Seiten für Ihre Markdown-Dateien.
+Das ist toll! Du hast in diesem Tutoial eine schöne Startseite erstellt, auf der deine abgefragten Dateien als eine Liste von Blogbeitrags-Titeln und Text-Auszügen dargestellt werden. Du willst jedoch nicht nur die Text-Auszüge sehen, sondern auch die tatsächlichen Seiten für deine Markdown-Dateien.
 
 Du kannst weitere Seiten erstellen, indem du React-Komponenten in `src/pages` erstellst. 
 Als Nächstes lernst du, wie sich _programmatisch_ Seiten aus _Daten_ erstellen lassen. 
