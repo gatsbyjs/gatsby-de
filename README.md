@@ -1,15 +1,18 @@
 
-# Gatsby German Translation
+# Gatsby auf Deutsch
 
-This repo contains the German translation for Gatsby.
+Dieses Repository enthält die offizielle deutsche Übersetzung für Gatsby.
 
-Please refer to the [Translation Progress Issue](https://github.com/gatsbyjs/gatsby-de/issues/1) to start translating!
+Beginne mit dem [Translation-Progress-Issue](https://github.com/gatsbyjs/gatsby-de/issues/1), um mit dem Übersetzen zu starten!
 
-Useful Links:
+Nützliche Links:
 
-* [Style Guide](/style-guide.md)
-* [Gatsby Translation Guide](https://www.gatsbyjs.org/contributing/gatsby-docs-translation-guide/)
+* [Style-Guide 💅](/style-guide.md)
+* [Gatsby-Translation-Guide](https://www.gatsbyjs.org/contributing/gatsby-docs-translation-guide/)
 * [Gatsby Discord](https://gatsby.dev/discord)
+* [Swag für Mitwirkende ✨](https://www.gatsbyjs.org/contributing/contributor-swag/)
 
-(Feel free to translate this document and add any content you feel would be useful to contributors).
-  
+
+## Wie kann ich anfangen? 🤔
+
+Beginne mit dem [Translation-Progress-Issue](https://github.com/gatsbyjs/gatsby-de/issues/1) und melde dich für eine Unterseite, die du übersetzen möchtest. Der [Style-Guide](/style-guide.md) hilft dir bei den ersten Schritten und beantwortet die ersten Fragen. 💅
