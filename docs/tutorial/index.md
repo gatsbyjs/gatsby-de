@@ -53,14 +53,10 @@ In diesen fortgeschrittenen Tutorials, wirst du lernen wie du Daten von nahezu
 Gatsby Themen abstrahieren alle Standardeinstellungen (geteilte Funktionalität,
 Datenquellen, Design) aus deiner Seite und in ein installierbares Paket.
 
-<<<<<<< HEAD
 Das bedeutet, dass die Konfiguration und Funktionalität nicht direkt in deinem
 Projekt fest geschrieben ist, sondern als abhängiges Paket versioniert, zentral
 verwaltet und installiert wird. Du kannst problemlos ein Thema aktualiseren,
-Themen zusammensetzen oder eines für ein anderes austauschen.  
-=======
-This means that the configuration and functionality aren’t directly written into your project, but rather versioned, centrally managed, and installed as a dependency. You can seamlessly update a theme, compose themes together, and even swap out one compatible theme for another.
->>>>>>> fd3df38d5351bfbf1bf86cb9e0c8cc80dc9ba2a7
+Themen zusammensetzen oder eines für ein anderes austauschen. Das bedeutet, dass die Konfiguration und Funktionalität nicht direkt in das Projekt geschrieben, sondern zentral organisiert und versioniert wird. Somit kann es als Paket installiert, geupdated und kombiniert werden.
 
 Lerne mehr über die Nutzung und das Erstellen von Themen mit dem
 [Gatsby Themen Tutorial](/tutorial/theme-tutorials/).
