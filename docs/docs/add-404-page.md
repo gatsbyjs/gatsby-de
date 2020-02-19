@@ -4,7 +4,7 @@ title: Hinzufügen einer 404 Seite
 
 Um eine 404 Seite zu erstellen, füge eine Seite, die dem Regex `^\/?404\/?$` (`/404/`, `/404`, `404/` oder `404`) entspricht. Üblicherweise erstellst du dafür eine React Komponente in `src/pages/404.js`.
 
-Gatsby stellt sicher, dass deine 404 Seite als `404.html` erstellt wird, da die meisten statischen Hosting Plattformen diese als Standard verwenden. Wenn du deine Seite anderweitig hostest musst du eine individuelle Regel erstellen, um die Seite für 404 Fehler aufrufbar zu machen.
+Gatsby stellt sicher, dass deine 404 Seite als `404.html` erstellt wird, da die meisten statischen Hosting Plattformen diese als Standard verwenden. Wenn du deine Seite anderweitig hostest, musst du eine individuelle Regel erstellen, um die Seite für 404 Fehler aufrufbar zu machen.
 
 Da Gatsby diese Seite standardmäßig für dich erstellt ist es nicht notwendig diese in `gatsby-node.js` zu konfigurieren.
 
