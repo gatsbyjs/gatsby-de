@@ -8,7 +8,7 @@ Gatsby stellt sicher, dass deine 404 Seite als `404.html` erstellt wird, da die 
 
 Da Gatsby diese Seite standardmäßig für dich erstellt, ist es nicht notwendig diese in `gatsby-node.js` zu konfigurieren.
 
-Beim Entwickeln mit `gatsby develop` nutzt Gatsby eine eigene 404 Seite die deine überschreibt. Allerdings kannst du deine 404 Seite ansehen, indem du auf "Preview custom 404 page" klickst um sicherzustellen, dass alles wie gewünscht funktioniert.
+Beim Entwickeln mit `gatsby develop` nutzt Gatsby eine eigene 404 Seite, welche deine überschreibt. Du kannst deine 404 Seite allerdings ansehen, indem du auf "Preview custom 404 page" klickst um sicherzustellen, dass alles wie gewünscht funktioniert.
 
 Der untenstehende Screenshot zeigt die Standard 404 Seite, die Gatsby für dich erstellt. Er listet auch alle Seiten der Webseite auf.
 ![Gatsby Standard 404 Seite](./images/gatsby-default-404.png)
