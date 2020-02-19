@@ -7,7 +7,7 @@ jsdoc:
 contentsHeading: Functions
 ---
 
-Gatsby verwendet [Redux](http://redux.js.org) unter der Haube um State zu verwalten. Wenn du eine Gatsby API verwendest bekommst du eine Auswahl von Actions (ähnlich der [bindActionCreators](https://redux.js.org/api/bindactioncreators/) Actions in Redux), welche du verwenden kannst um State in deiner App zu verwalten.
+Intern verwendet Gatsby [Redux](http://redux.js.org) um State zu verwalten. Wenn du eine Gatsby API verwendest, bekommst du eine Auswahl von Actions (ähnlich der [bindActionCreators](https://redux.js.org/api/bindactioncreators/) Actions in Redux), welche du dann zum verwalten von State in deiner App verwenden kannst.
 
 Das `actions` Objekt beinhaltet Funktionen die mit ES6 Objekt Destructuring einzeln bereitgestellt werden können.
 
