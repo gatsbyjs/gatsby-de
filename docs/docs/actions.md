@@ -9,7 +9,7 @@ contentsHeading: Functions
 
 Intern verwendet Gatsby [Redux](http://redux.js.org) um State zu verwalten. Wenn du eine Gatsby API verwendest, bekommst du eine Auswahl von Actions (ähnlich der [bindActionCreators](https://redux.js.org/api/bindactioncreators/) Actions in Redux), welche du dann zum verwalten von State in deiner App verwenden kannst.
 
-Das `actions` Objekt beinhaltet Funktionen die mit ES6 Objekt Destructuring einzeln bereitgestellt werden können.
+Das `actions` Objekt beinhaltet Funktionen, die mit ES6 Objekt Destructuring einzeln extrahiert werden können.
 
 ```javascript
 // Für die createNodeField Funktion
