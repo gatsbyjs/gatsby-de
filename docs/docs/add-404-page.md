@@ -6,7 +6,7 @@ Um eine 404 Seite zu erstellen, füge eine Seite, die dem Regex `^\/?404\/?$` (`
 
 Gatsby stellt sicher, dass deine 404 Seite als `404.html` erstellt wird, da die meisten statischen Hosting Plattformen diese als Standard verwenden. Wenn du deine Seite anderweitig hostest, musst du eine individuelle Regel erstellen, um die Seite für 404 Fehler aufrufbar zu machen.
 
-Da Gatsby diese Seite standardmäßig für dich erstellt ist es nicht notwendig diese in `gatsby-node.js` zu konfigurieren.
+Da Gatsby diese Seite standardmäßig für dich erstellt, ist es nicht notwendig diese in `gatsby-node.js` zu konfigurieren.
 
 Beim Entwickeln mit `gatsby develop` nutzt Gatsby eine eigene 404 Seite die deine überschreibt. Allerdings kannst du deine 404 Seite ansehen, indem du auf "Preview custom 404 page" klickst um sicherzustellen, dass alles wie gewünscht funktioniert.
 
