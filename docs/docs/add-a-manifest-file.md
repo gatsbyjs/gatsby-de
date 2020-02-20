@@ -53,4 +53,4 @@ npm install --save gatsby-plugin-manifest
 }
 ```
 
-Das ist alles, was du tun musst um deiner Gatsby Seite ein Web Manifest hinzuzufügen. Das Beispiel hier spiegelt eine Basiskonfiguration wieder. Für weiterführende Informationen schau dir die [Plugin Dokumentation](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode) an.
+Das ist alles, was du tun musst, um deiner Gatsby Seite ein Web Manifest hinzuzufügen. Das Beispiel hier spiegelt eine Basiskonfiguration wieder. Für weiterführende Informationen schau dir die [Plugin Dokumentation](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode) an.
