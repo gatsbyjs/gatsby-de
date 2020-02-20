@@ -1,6 +1,6 @@
 ---
 title: Actions
-description: Dokumentation für Actions und wie diese helfen State in Gatsby zu manipulieren
+description: Dokumentation für Actions und wie sie dir helfen State in Gatsby zu manipulieren
 jsdoc:
   - "gatsby/src/redux/actions/public.js"
   - "gatsby/src/redux/actions/restricted.js"
