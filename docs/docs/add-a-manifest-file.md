@@ -6,7 +6,7 @@ Wenn du einen [Test mit Lighthouse](/docs/audit-with-lighthouse/) ausführst, ha
 
 Aber zuerst, was _sind_ überhaupt PWAs?
 
-PWAs sind normale Webseiten die sich Funktionen moderner Browser zunutze machen um das User Erlebnis so zu verändern, dass die Webseite sich wie eine App anfühlt. Hier kannst du [Google's Übersicht (in Englisch)](https://developers.google.com/web/progressive-web-apps/) lesen, wo das PWA Erlebnis erklärt wird. Hier findest du außerdem unser [Progressive web apps (PWAs) doc](/docs/progressive-web-app/) um zu erfahren wie eine Gatsby Seite eine PWA sein kann.
+PWAs sind normale Webseiten die sich Funktionen moderner Browser zunutze machen um das User Erlebnis so zu verändern, dass die Webseite sich wie eine App anfühlt. Hier kannst du [Google's Übersicht (in Englisch)](https://developers.google.com/web/progressive-web-apps/) lesen, auf der erklärt wird, was die Merkmale und Vorteile von PWAs sind. Hier findest du außerdem unser [Progressive web apps (PWAs) Dokument](/docs/progressive-web-app/), mit dem wir dir zeigen, wie deine Gatsby Seite eine PWA werden kann.
 
 Das Bereitstellen eines Web App Manifests ist eine der drei generellen [Grundlegenden Anforderungen an eine PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
 
