@@ -24,7 +24,7 @@ Zitat [Google](https://developers.google.com/web/fundamentals/web-app-manifest/)
 npm install --save gatsby-plugin-manifest
 ```
 
-2. Füge deiner Seite ein Favicon unter `src/images/icon.png` hinzu. Das Icon wird benötigt um alle Images für das Manifest zu erstellen. Mehr Informationen hierzu findest du unter der Plugin Dokumentation: [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
+2. Füge deiner Seite ein Favicon unter `src/images/icon.png` hinzu. Das Icon wird benötigt, um alle Bilder für das Manifest zu erstellen. Mehr Informationen hierzu findest du in der Plugin Dokumentation: [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
 
 3. Füge das Plugin dem `plugins` Array in deiner `gatsby-config.js` Datei hinzu.
 
