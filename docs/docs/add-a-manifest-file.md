@@ -2,7 +2,7 @@
 title: Hinzufügen einer Manifest Datei
 ---
 
-Wenn du einen [Test mit Lighthouse](/docs/audit-with-lighthouse/) ausführst hast du vielleicht schon die fehlende Bewertung in der "Progressive Web App" Kategorie gesehen. Hier erklären wir dir, wie wir diese verbessern können.
+Wenn du einen [Test mit Lighthouse](/docs/audit-with-lighthouse/) ausführst, hast du vielleicht schon die fehlende Bewertung in der Kategorie "Progressive Web App" gesehen. Hier erklären wir dir, wie du diese verbessern kannst.
 
 Aber zuerst, was _sind_ überhaupt PWAs?
 
