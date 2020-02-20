@@ -12,7 +12,7 @@ Das Bereitstellen eines Web App Manifests ist eine der drei [grundlegenden Anfor
 
 Zitat [Google](https://developers.google.com/web/fundamentals/web-app-manifest/):
 
-> Das Web App Manifest ist eine einfache JSON Datei, welche dem Browser Informationen über deine Applikation bereitstellt und wie deine Applikation sich verhalten soll, wenn sie auf dem Gerät deines Benutzers 'installiert' ist.
+> Das Web App Manifest ist eine einfache JSON Datei, welche dem Browser Informationen über deine Applikation und wie diese sich verhalten soll, wenn sie auf dem Gerät deiner Benutzers 'installiert' ist, bereitstellt.
 
 [Gatsby's Manifest Plugin](/packages/gatsby-plugin-manifest/) konfiguriert Gatsby so, dass eine `manifest.webmanifest` Datei bei jedem Build Prozess der Seite erstellt wird.
 
