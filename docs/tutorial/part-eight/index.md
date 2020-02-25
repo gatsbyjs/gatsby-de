@@ -22,7 +22,7 @@ Ein Zitat von der [Lighthouse Website](https://developers.google.com/web/tools/l
 
 > Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps (PWAs), and more.
 
-Lighthouse ist Teil der Chrome DevTools. Ein Lighthouse Audit hilft dir dabei, gängige Fehler zu finden und schlägt auch direkt Lösungen zur Behebung dieser Fehler vor. Diese Lösungen in dein Projekt einzubauen ist ein ideal, um deine Seite für das Go Live vorzubereiten. Lighthouse gibt dir die Sicherheit, dass deine Seite so schnell und barrierefrei wie möglich ist.
+Lighthouse ist Teil der Chrome DevTools. Ein Lighthouse Audit hilft dir dabei, gängige Fehler zu finden und schlägt auch direkt Lösungen zur Behebung dieser Fehler vor. Diese Lösungen in dein Projekt einzubauen ist ideal, um deine Seite für das Go Live vorzubereiten. Lighthouse gibt dir die Sicherheit, dass deine Seite so schnell und barrierefrei wie möglich ist.
 
 Versuchs einfach!
 
@@ -68,7 +68,7 @@ Es sieht so aus, als wären deine Ergebnisse im Bereich Progressive Web App (PWA
 
 Aber zunächst: was _sind_ PWAs eigentlich _genau_?
 
-PWAs sind normale Webseiten, die sich moderne Browserfunktionen zu Nütze machen, um die Web Experience mit app-ähnlichen Features und Vorteilen zu ergänzen. Sieh dir dazu die [Übersicht auf Google](https://developers.google.com/web/progressive-web-apps/) an, um heruaszufinden, was genau eine PWA ausmacht.
+PWAs sind normale Webseiten, die sich moderne Browserfunktionen zu Nütze machen, um die Web Experience mit app-ähnlichen Features und Vorteilen zu ergänzen. Sieh dir dazu die [Übersicht auf Google](https://developers.google.com/web/progressive-web-apps/) an, um herauszufinden, was genau eine PWA ausmacht.
 
 Ein Web App Manifest zu haben, ist eine von drei akzeptierten [Grundvoraussetzungen für PWAs](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
 
