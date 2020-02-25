@@ -6,13 +6,13 @@ disableTableOfContents: true
 
 Wow! Du hast es weit geschafft. Du hast gelernt:
 
-- neue Gatsby Seite zu erstellen
+- eine neue Gatsby Seite zu erstellen
 - Pages und Components zu erstellen
 - Components zu stylen
 - Plugins zu installieren
-- Datenquellen zu sourcen und zu transformieren // TODO
+- Datenquellen zu erstellen und zu transformieren 
 - GraphQL zu nutzen, um Daten abzufragen
-- programmatisch Pages aus deinen Daten zu erstellen // TODO
+- programmatisch Pages aus deinen Daten zu erstellen 
 
 In diesem letzten Abschnitt wirst du die gängigen Schritte durchlaufen, um deine Seite für das Go Live vorzubereiten. Dazu werden wir das mächtige Diagnose-Tool [Lighthouse](https://developers.google.com/web/tools/lighthouse/) benutzen. Außerdem werden wir noch einige weitere, häufig genutzte Plugins installieren.
 
@@ -337,7 +337,7 @@ Wenn du jetzt den Lighthouse Audit wie oben beschrieben nochmal durchführst, so
 
 > 💡 Für weitere Infos und Beispiele schau dir [Ein SEO Component hinzufügen](/docs/add-seo-component/) und die [React Helmet Dokumentation](https://github.com/nfl/react-helmet#example) an.
 
-## Weitere Verbesserungen // TODO
+## Weitere Verbesserungen 
 
 In diesem Abschnitt haben wir dir ein paar Gatsby-spezifische Tools gezeigt, mit denen du deine Performance verbessern kannst und deine Seite für das Go Live vorbereiten kannst.
 
