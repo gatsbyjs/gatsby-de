@@ -291,7 +291,7 @@ SEO.propTypes = {
 export default SEO
 ```
 
-Dieser Code erstellt sinnvolle Defaultwerte für die meisten Metadaten Tags und erstellt ein `<SEO>` Komponente, die du im Rest deines Projekts verwenden kannst. Nicht schlecht, oder?
+Dieser Code erstellt sinnvolle Defaultwerte für die meisten Metadaten Tags und erstellt eine `<SEO>` Komponente, die du im Rest deines Projekts verwenden kannst. Nicht schlecht, oder?
 
 4.  Du kannst jetzt die neue `<SEO>` Komponente in deinen Templates und Seiten benutzen und ihm `props` übergeben. So kannst du es bspw. zu deinem `blog-post.js` Template hinzufügen:
 
