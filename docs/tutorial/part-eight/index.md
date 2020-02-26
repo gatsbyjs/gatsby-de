@@ -4,15 +4,15 @@ typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Wow! Du hast es weit geschafft. Du hast gelernt:
+Wow! Du hast es schon weit geschafft und dabei gelernt:
 
 - eine neue Gatsby Seite zu erstellen
-- Pages und Components zu erstellen
-- Components zu stylen
+- Seiten und Komponenten zu erstellen
+- Komponenten zu stylen
 - Plugins zu installieren
-- Datenquellen zu erstellen und zu transformieren 
-- GraphQL zu nutzen, um Daten abzufragen
-- programmatisch Pages aus deinen Daten zu erstellen 
+- Daten zu laden und zu umzuwandeln 
+- GraphQL zur Datenabfrage zu nutzen
+- programmatisch Seiten aus deinen Daten zu erstellen 
 
 In diesem letzten Abschnitt wirst du die gängigen Schritte durchlaufen, um deine Seite für die Veröffentlichung vorzubereiten. Dazu werden wir das mächtige Diagnose-Tool [Lighthouse](https://developers.google.com/web/tools/lighthouse/) benutzen. Außerdem werden wir noch einige weitere, häufig genutzte Plugins installieren.
 
@@ -24,7 +24,7 @@ Ein Zitat von der [Lighthouse Website](https://developers.google.com/web/tools/l
 
 Lighthouse ist Teil der Chrome DevTools. Ein Lighthouse Audit hilft dir dabei, gängige Fehler zu finden und schlägt auch direkt Lösungen zur Behebung dieser Fehler vor. Diese Lösungen in dein Projekt einzubauen ist ideal, um deine Seite für die Veröffentlichung vorzubereiten. Lighthouse gibt dir die Sicherheit, dass deine Seite so schnell und barrierefrei wie möglich ist.
 
-Versuchs einfach!
+Versuch es einfach mal!
 
 Als erstes musst du einen Production Build von deiner Gatsby Seite erstellen. Der Gatsby Development Server optimiert dein Projekt zwar für die Entwicklung und obwohl das Projekt so aussieht, als wäre es "production-ready", ist es dafür nicht optimiert.
 
@@ -68,7 +68,7 @@ Es sieht so aus, als wären deine Ergebnisse im Bereich Progressive Web App (PWA
 
 Aber zunächst: was _sind_ PWAs eigentlich _genau_?
 
-PWAs sind normale Webseiten, die sich moderne Browserfunktionen zu Nütze machen, um die Web Experience mit app-ähnlichen Features und Vorteilen zu ergänzen. Sieh dir dazu die [Übersicht auf Google](https://developers.google.com/web/progressive-web-apps/) an, um herauszufinden, was genau eine PWA ausmacht.
+PWAs sind normale Webseiten, die sich moderne Browserfunktionen zu Nütze machen, um die Web Experience mit App-ähnlichen Features zu ergänzen. Sieh dir dazu die [Übersicht auf Google](https://developers.google.com/web/progressive-web-apps/) an, um herauszufinden, was genau eine PWA ausmacht.
 
 Ein Web App Manifest zu haben, ist eine von drei akzeptierten [Grundvoraussetzungen für PWAs](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
 
@@ -78,15 +78,15 @@ Bei [Google](https://developers.google.com/web/fundamentals/web-app-manifest/) f
 
 Das [Gatsby's manifest plugin](/packages/gatsby-plugin-manifest/) konfiguriert Gatsby so, dass es bei jedem Build der Seite ein `manifest.webmanifest` erstellt.
 
-### ✋ Das `gatsby-plugin-manifest` verwenden
+### ✋ `gatsby-plugin-manifest` verwenden
 
-1.  Installiere das plugin:
+1.  Installiere das Plugin:
 
 ```shell
 npm install --save gatsby-plugin-manifest
 ```
 
-2. Füge ein favicon für dein Projekt unter `src/images/icon.png` hinzu. Du kannst beispielhaft [dieses Icon](https://raw.githubusercontent.com/gatsbyjs/gatsby/master/docs/tutorial/part-eight/icon.png) verwenden, falls du keins zur Hand hast. Für weitere Informationen schau dir die Dokumentation vom [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md) an.
+2. Füge ein Favicon für dein Projekt unter `src/images/icon.png` hinzu. Du kannst beispielhaft [dieses Icon](https://raw.githubusercontent.com/gatsbyjs/gatsby/master/docs/tutorial/part-eight/icon.png) verwenden, falls du keines zur Hand hast. Für weitere Informationen schau dir die Dokumentation von [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md) an.
 
 3. Füge das Plugin in das `plugins` Array in deiner `gatsby-config.js` Datei hinzu.
 
@@ -115,9 +115,9 @@ Das ist alles, was du brauchst, um ein Web manifest zu deinem Gatsby Projekt hin
 
 ## Mach dein Projekt offline verfügbar
 
-Eine weitere Voraussetzung dafür, dass dein Projekt als PWA erkannt wird, ist das Nutzen eines sog. [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Ein Service Worker läuft im Hintergrund und entscheidet, ob er Inhalte aus dem Cache oder aus dem Netzwerk anzeigen soll. Dadurch funktioniert deine Seite unabhängig davon, ob dein Client im Internet verbunden ist, oder nicht.
+Eine weitere Voraussetzung dafür, dass dein Projekt als PWA erkannt wird, ist das Nutzen eines sog. [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Ein Service Worker läuft im Hintergrund und entscheidet bspw., ob er Inhalte aus dem Cache oder aus dem Netzwerk anzeigen soll. Dadurch funktioniert deine Seite unabhängig davon, ob dein Client im Internet verbunden ist, oder nicht.
 
-Das [Gatsby offline plugin](/packages/gatsby-plugin-offline/) erstellt einen Service Worker für dein Projekt, lässt deine Seite dadurch auch offline funktionieren und rüstet sie gegen schlechte Netzwerkbedingungen.
+Das [Gatsby offline Plugin](/packages/gatsby-plugin-offline/) erstellt einen Service Worker für dein Projekt, lässt deine Seite dadurch auch offline funktionieren und rüstet sie gegen schlechte Netzwerkbedingungen.
 
 ### ✋ `gatsby-plugin-offline` verwenden
 
@@ -154,7 +154,7 @@ npm install --save gatsby-plugin-offline
 
 Das ist alles, was du brauchst, um Service Worker in dein Gatsby Projekt einzubinden.
 
-> 💡 Das gatsby-plugin-offline sollte _nach_ dem gatsby-plugin-manifest deklariert werden, sodass das Offlineplugin auch das `manifest.webmanifest` cachen kann.
+> 💡 Das Plugin "gatsby-plugin-offline" sollte _nach_ dem Plugin "gatsby-plugin-manifest" deklariert werden, sodass das Offlineplugin auch das `manifest.webmanifest` cachen kann.
 
 ## Füge Metadaten hinzu
 
@@ -205,7 +205,7 @@ module.exports = {
 }
 ```
 
-3.  Erstelle eine Datei namens `seo.js` im Ordner `src/components` und schreibe folgendes in die Datei:
+3.  Erstelle eine Datei namens `seo.js` im Ordner `src/components` mit folgenden Inhalt:
 
 ```jsx:title=src/components/seo.js
 import React from "react"
@@ -291,9 +291,9 @@ SEO.propTypes = {
 export default SEO
 ```
 
-Dieser Code erstellt sinnvolle Defaultwerte für die meisten Metadaten Tags und erstellt ein `<SEO>` Component, das du im Rest deines Projekts verwenden kannst. Nicht schlecht, oder?
+Dieser Code erstellt sinnvolle Defaultwerte für die meisten Metadaten Tags und erstellt ein `<SEO>` Komponente, die du im Rest deines Projekts verwenden kannst. Nicht schlecht, oder?
 
-4.  Du kannst jetzt das neue `<SEO>` Component in deinen Templates und Seiten benutzen und ihm `props` übergeben. So kannst du es bspw. zu deinem `blog-post.js` Template hinzufügen:
+4.  Du kannst jetzt die neue `<SEO>` Komponente in deinen Templates und Seiten benutzen und ihm `props` übergeben. So kannst du es bspw. zu deinem `blog-post.js` Template hinzufügen:
 
 ```jsx:title=src/templates/blog-post.js
 import React from "react"
@@ -331,11 +331,11 @@ export const query = graphql`
 `
 ```
 
-Das oben gezeigte Beispiel basiert auf dem [Gatsby Starter Blog](/starters/gatsbyjs/gatsby-starter-blog/). Mit den props im `<SEO>` Component kannst du die Metadaten dynmaisch für einen Blogpost ändern. In diesem Fall wird der `title` und das `excerpt` aus der Markdown Datei des Blogposts (falls vorhanden) statt des Defaultwerts aus den `siteMetadata` Daten benutzt. 
+Das oben gezeigte Beispiel basiert auf dem [Gatsby Starter Blog](/starters/gatsbyjs/gatsby-starter-blog/). Mit den props in der `<SEO>` Komponente kannst du die Metadaten dynamisch für einen Blogpost ändern. In diesem Fall wird der `title` und das `excerpt` aus der Markdown Datei des Blogposts (falls vorhanden) statt des Defaultwerts aus den `siteMetadata` Daten benutzt. 
 
-Wenn du jetzt den Lighthouse Audit wie oben beschrieben nochmal durchführst, solltest du ein Ergebnis nah an 100 bekommen. Vielleicht sogar 100 glatt!
+Wenn du jetzt den Lighthouse Audit, wie oben beschrieben, noch einmal durchführst, solltest du ein Ergebnis nah an 100 bekommen. Vielleicht sogar genau 100!
 
-> 💡 Für weitere Infos und Beispiele schau dir [Ein SEO Component hinzufügen](/docs/add-seo-component/) und die [React Helmet Dokumentation](https://github.com/nfl/react-helmet#example) an.
+> 💡 Für weitere Infos und Beispiele schau dir an, wie du [eine SEO Komponente hinzufügst](/docs/add-seo-component/) und die [Dokumentation von React Helmet](https://github.com/nfl/react-helmet#example) an.
 
 ## Weitere Verbesserungen 
 
