@@ -1,5 +1,5 @@
 ---
-title: Eine Seite für das Go Live vorbereiten
+title: Eine Seite für die Veröffentlichung vorbereiten
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
@@ -14,7 +14,7 @@ Wow! Du hast es weit geschafft. Du hast gelernt:
 - GraphQL zu nutzen, um Daten abzufragen
 - programmatisch Pages aus deinen Daten zu erstellen 
 
-In diesem letzten Abschnitt wirst du die gängigen Schritte durchlaufen, um deine Seite für das Go Live vorzubereiten. Dazu werden wir das mächtige Diagnose-Tool [Lighthouse](https://developers.google.com/web/tools/lighthouse/) benutzen. Außerdem werden wir noch einige weitere, häufig genutzte Plugins installieren.
+In diesem letzten Abschnitt wirst du die gängigen Schritte durchlaufen, um deine Seite für die Veröffentlichung vorzubereiten. Dazu werden wir das mächtige Diagnose-Tool [Lighthouse](https://developers.google.com/web/tools/lighthouse/) benutzen. Außerdem werden wir noch einige weitere, häufig genutzte Plugins installieren.
 
 ## Audit mit Lighthouse
 
@@ -22,7 +22,7 @@ Ein Zitat von der [Lighthouse Website](https://developers.google.com/web/tools/l
 
 > Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps (PWAs), and more.
 
-Lighthouse ist Teil der Chrome DevTools. Ein Lighthouse Audit hilft dir dabei, gängige Fehler zu finden und schlägt auch direkt Lösungen zur Behebung dieser Fehler vor. Diese Lösungen in dein Projekt einzubauen ist ideal, um deine Seite für das Go Live vorzubereiten. Lighthouse gibt dir die Sicherheit, dass deine Seite so schnell und barrierefrei wie möglich ist.
+Lighthouse ist Teil der Chrome DevTools. Ein Lighthouse Audit hilft dir dabei, gängige Fehler zu finden und schlägt auch direkt Lösungen zur Behebung dieser Fehler vor. Diese Lösungen in dein Projekt einzubauen ist ideal, um deine Seite für die Veröffentlichung vorzubereiten. Lighthouse gibt dir die Sicherheit, dass deine Seite so schnell und barrierefrei wie möglich ist.
 
 Versuchs einfach!
 
@@ -339,7 +339,7 @@ Wenn du jetzt den Lighthouse Audit wie oben beschrieben nochmal durchführst, so
 
 ## Weitere Verbesserungen 
 
-In diesem Abschnitt haben wir dir ein paar Gatsby-spezifische Tools gezeigt, mit denen du deine Performance verbessern kannst und deine Seite für das Go Live vorbereiten kannst.
+In diesem Abschnitt haben wir dir ein paar Gatsby-spezifische Tools gezeigt, mit denen du deine Performance verbessern kannst und deine Seite für die Veröffentlichung vorbereiten kannst.
 
 Lighthouse ist ein großartiges Tool für Verbesserungen und um zu lernen. Schau dir das detaillierte Feedback von Lighthouse an und mach deine Seite noch besser!
 
