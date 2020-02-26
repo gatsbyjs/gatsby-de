@@ -16,7 +16,7 @@ Wow! Du hast es schon weit geschafft und dabei gelernt:
 
 In diesem letzten Abschnitt wirst du die gängigen Schritte durchlaufen, um deine Seite für die Veröffentlichung vorzubereiten. Dazu werden wir das mächtige Diagnose-Tool [Lighthouse](https://developers.google.com/web/tools/lighthouse/) benutzen. Außerdem werden wir noch einige weitere, häufig genutzte Plugins installieren.
 
-## Audit mit Lighthouse
+## Überprüfung durch ein Lighthouse Audit
 
 Ein Zitat von der [Lighthouse Website](https://developers.google.com/web/tools/lighthouse/):
 
@@ -68,7 +68,7 @@ Es sieht so aus, als wären deine Ergebnisse im Bereich Progressive Web App (PWA
 
 Aber zunächst: was _sind_ PWAs eigentlich _genau_?
 
-PWAs sind normale Webseiten, die sich moderne Browserfunktionen zu Nütze machen, um die Web Experience mit App-ähnlichen Features zu ergänzen. Sieh dir dazu die [Übersicht auf Google](https://developers.google.com/web/progressive-web-apps/) an, um herauszufinden, was genau eine PWA ausmacht.
+PWAs sind normale Webseiten, die sich moderne Browserfunktionen zu Nutze machen, um die Web Experience mit App-ähnlichen Features zu ergänzen. Sieh dir dazu die [Übersicht auf Google](https://developers.google.com/web/progressive-web-apps/) an, um herauszufinden, was genau eine PWA ausmacht.
 
 Ein Web App Manifest zu haben, ist eine von drei akzeptierten [Grundvoraussetzungen für PWAs](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
 
