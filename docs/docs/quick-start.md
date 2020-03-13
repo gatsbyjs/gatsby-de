@@ -2,7 +2,7 @@
 title: Schnellstart
 ---
 
-Dieser Schnellstart ist für fortgeschrittene Entwickler gedacht. Für eine sanftere Einführung in Gatsby, [fange mit dem Tutorial an](/tutorial/)!
+Dieser Schnellstart ist für fortgeschrittene Entwickler gedacht. Für eine sanftere Einführung in Gatsby, [beginne mit unserem Tutorial](/tutorial/)!
 
 ## Nutze die Gatsby-CLI
 
@@ -38,7 +38,7 @@ cd gatsby-site
 gatsby develop
 ```
 
-Gatsby wird eine Hot-Reloading-Entwicklungsumgebung starten, die standardmäßig unter `http://localhost:8000` zugänglich ist.
+Gatsby wird eine Hot-Reloading-Entwicklungsumgebung starten, die standardmäßig unter `http://localhost:8000` erreichbar ist.
 
 Versuche, die JavaScript-Seiten in `src/pages` zu bearbeiten. Gespeicherte Änderungen werden im Browser live neu geladen.
 
@@ -48,7 +48,7 @@ Versuche, die JavaScript-Seiten in `src/pages` zu bearbeiten. Gespeicherte Ände
 gatsby build
 ```
 
-Gatsby führt einen optimierten Produktiv-Build für deine Website durch und generiert statisches HTML und routenbezogene JavaScript-Code-Paket.
+Gatsby führt einen optimierten Produktiv-Build für deine Website durch und generiert statisches HTML und JavaScript-Code-Pakete für jede Route.
 
 
 ### Führe die auslieferungsfertige Version lokal aus
@@ -57,7 +57,7 @@ Gatsby führt einen optimierten Produktiv-Build für deine Website durch und gen
 gatsby serve
 ```
 
-Gatsby startet einen lokalen HTML-Server zum Testen deiner erstellten Webseite. Vergesse nicht, die Website mit `gatsby build` zu erstellen, bevor du diesen Befehl verwendest.
+Gatsby startet einen lokalen HTML-Server zum Testen deiner erstellten Website. Vergiss nicht, die Website mit `gatsby build` zu erstellen, bevor du diesen Befehl verwendest.
 
 ### Zugriff auf die Dokumentation für CLI-Befehle
 
