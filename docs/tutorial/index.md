@@ -38,7 +38,7 @@ In diesen fortgeschrittenen Tutorials lernst du, wie Daten von nahezu
    Blogs und Nutzung einer GraphQL Abfrage um deinen Webseiten Titel in der
    Kopfzeile deines Blogs darzustellen.
 5. [Datenquellen Plugins und Darstellung von angefragten Daten](/tutorial/part-five/):
-   Hier lernst du wie du ein Datenquellen Plugin nutzen kannst um Markdown
+   Hier lernst du wie du ein Quellen Plugin nutzen kannst, um Markdown
    Blog Beiträge in deiner Seite darzustellen und wie du eine Übersichtsseite mit
    einer Liste aller Blog Beiträge ertsellen kannst.
 6. [Umformende Plugins](/tutorials/part-six/): Nutze ein umformendes
