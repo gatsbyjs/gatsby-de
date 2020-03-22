@@ -60,7 +60,7 @@ Projekt festgelegt wird, sondern als externe Abhängigkeit versioniert, zentral
 verwaltet und installiert wird. Du kannst problemlos ein Theme aktualisieren,
 Themes zusammensetzen oder mit einem anderen ersetzen.
 
-Lerne mehr über die Nutzung und das Erstellen von Themes mit im
+Lerne mehr über die Nutzung und das Erstellen von Themes im
 [Gatsby Themes Tutorial](/tutorial/theme-tutorials/).
 
 ## Zusätzliche Tutorials
