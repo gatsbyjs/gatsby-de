@@ -50,7 +50,7 @@ In diesen fortgeschrittenen Tutorials lernst du, wie Daten von nahezu
    Prüfe deine Seite auf Performance und empfohlene Vorgehensweisen
    für Barrierefreiheit und Suchmaschinenoptimierung (SEO).
 
-## Themes Tutorials
+## Theme Tutorials
 
 Gatsby Themes abstrahieren alle Standardeinstellungen (geteilte Funktionalität,
 Datenquellen, Design) aus deiner Seite in ein installierbares Paket.
