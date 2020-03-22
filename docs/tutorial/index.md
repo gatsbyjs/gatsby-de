@@ -42,7 +42,7 @@ In diesen fortgeschrittenen Tutorials lernst du, wie Daten von nahezu
    Blog Beiträge in deiner Seite darzustellen und wie du eine Übersichtsseite mit
    einer Liste aller Blog Beiträge ertsellen kannst.
 6. [Transformer Plugins](/tutorials/part-six/): Nutze ein Transformer
-   Plugin um Markdown Blog Beiträge in eine Form zu transforimieren, die der
+   Plugin um Markdown Blog Beiträge in eine Form umzuwandeln, die der
    dein Blog als Webseite darstellen kann.
 7. [Programmatisches Erstellen von Seiten aus Daten](/tutorial/part-seven/):
    Lerne wie Seiten für deinen Blog programatisch erstellt werden können.
