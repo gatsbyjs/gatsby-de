@@ -1,10 +1,10 @@
 ---
-title: API Files
+title: API Dateien
 ---
 
-Gatsby uses 4 files in the root of your project to configure your site and control its behavior. All of these files are optional.
+Gatsby verwendet 4 Dateien im Stammverzeichnis Ihres Projekts, um Ihre Site zu konfigurieren und ihr Verhalten zu steuern. Sowohl Sites als auch Plugins können diese Dateien implementieren. Alle diese Dateien sind optional.
 
-- [gatsby-config.js](/docs/api-files-gatsby-config) - Enables plugins, defines common site data, and contains other site configuration that integrates with Gatsby's GraphQL data layer.
-- [gatsby-browser.js](/docs/api-files-gatsby-browser) - Gives you control over Gatsby's behavior in the browser. For example, responding to a user changing routes, or calling a function when the user first opens any page.
-- [gatsby-node.js](/docs/api-files-gatsby-node) - Allows you to respond to events in the Gatsby build cycle. For example, adding pages dynamically, editing GraphQL nodes as they are created, or performing an action after a build is complete.
-- [gatsby-ssr.js](/docs/api-files-gatsby-ssr) - Exposes Gatsby's server-side rendering process so you can control how it builds your HTML pages.
+- [gatsby-config.js](/docs/api-files-gatsby-config) - Aktiviert Plugins, definiert allgemeine Standortdaten und enthält andere Standortkonfigurationen, die in die GraphQL-Datenschicht von Gatsby integriert sind.
+- [gatsby-browser.js](/docs/api-files-gatsby-browser) - Gibt Ihnen die Kontrolle über Gatsbys Verhalten im Browser. Beispiel: Reagieren Sie auf einen Benutzer, der Routen ändert, oder rufen Sie eine Funktion auf, wenn der Benutzer zum ersten Mal eine Seite öffnet.
+- [gatsby-node.js](/docs/api-files-gatsby-node) - Ermöglicht es Ihnen, auf Ereignisse im Gatsby-Erstellungszyklus zu reagieren. Beispiel: Dynamisches Hinzufügen von Seiten, Bearbeiten von GraphQL-Knoten beim Erstellen oder Ausführen einer Aktion nach Abschluss eines Builds.
+- [gatsby-ssr.js](/docs/api-files-gatsby-ssr) - Zeigt den serverseitigen Renderprozess von Gatsby an, damit Sie steuern können, wie Ihre HTML-Seiten erstellt werden.
