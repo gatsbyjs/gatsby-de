@@ -56,7 +56,7 @@ Datenquellen, Design) aus deiner Seite und in ein installierbares Paket.
 Das bedeutet, dass die Konfiguration und Funktionalität nicht direkt in deinem
 Projekt fest geschrieben ist, sondern als abhängiges Paket versioniert, zentral
 verwaltet und installiert wird. Du kannst problemlos ein Thema aktualiseren,
-Themen zusammensetzen oder eines für ein anderes austauschen.  
+Themen zusammensetzen oder eines für ein anderes austauschen. Das bedeutet, dass die Konfiguration und Funktionalität nicht direkt in das Projekt geschrieben, sondern zentral organisiert und versioniert wird. Somit kann es als Paket installiert, geupdated und kombiniert werden.
 
 Lerne mehr über die Nutzung und das Erstellen von Themen mit dem
 [Gatsby Themen Tutorial](/tutorial/theme-tutorials/).
