@@ -1,32 +1,32 @@
 ---
-title: Adding a Manifest File
+title: Hinzufügen einer Manifest Datei
 ---
 
-If you've run an [audit with Lighthouse](/docs/audit-with-lighthouse/), you may have noticed a lackluster score in the "Progressive Web App" category. Let's address how you can improve that score.
+Wenn du einen [Test mit Lighthouse](/docs/audit-with-lighthouse/) ausführst, hast du vielleicht schon die fehlende Bewertung in der Kategorie "Progressive Web App" gesehen. Hier erklären wir dir, wie du diese verbessern kannst.
 
-But first, what exactly _are_ PWAs?
+Aber zuerst, was _sind_ überhaupt PWAs?
 
-They are regular websites that take advantage of modern browser functionality to augment the web experience with app-like features and benefits. Check out [Google's overview](https://developers.google.com/web/progressive-web-apps/) of what defines a PWA experience and the [Progressive web apps (PWAs) doc](/docs/progressive-web-app/) to learn how a Gatsby site is a progressive web app.
+PWAs sind normale Webseiten die sich Funktionen moderner Browser zunutze machen um das User Erlebnis so zu verändern, dass die Webseite sich wie eine App anfühlt. Hier kannst du [Google's Übersicht (in Englisch)](https://developers.google.com/web/progressive-web-apps/) lesen, auf der erklärt wird, was die Merkmale und Vorteile von PWAs sind. Hier findest du außerdem unser [Progressive web apps (PWAs) Dokument](/docs/progressive-web-app/), mit dem wir dir zeigen, wie deine Gatsby Seite eine PWA werden kann.
 
-The inclusion of a web app manifest is one of the three generally accepted [baseline requirements for a PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
+Das Bereitstellen eines Web App Manifests ist eine der drei [grundlegenden Anforderungen an eine PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
 
-Quoting [Google](https://developers.google.com/web/fundamentals/web-app-manifest/):
+Zitat [Google](https://developers.google.com/web/fundamentals/web-app-manifest/):
 
-> The web app manifest is a simple JSON file that tells the browser about your web application and how it should behave when 'installed' on the user's mobile device or desktop.
+> Das Web App Manifest ist eine einfache JSON Datei, welche dem Browser Informationen über deine Applikation und wie diese sich verhalten soll, wenn sie auf dem Gerät deiner Benutzers 'installiert' ist, bereitstellt.
 
-[Gatsby's manifest plugin](/packages/gatsby-plugin-manifest/) configures Gatsby to create a `manifest.webmanifest` file on every site build.
+[Gatsby's Manifest Plugin](/packages/gatsby-plugin-manifest/) konfiguriert Gatsby so, dass eine `manifest.webmanifest` Datei bei jedem Build Prozess der Seite erstellt wird.
 
-## Using `gatsby-plugin-manifest`
+## `gatsby-plugin-manifest` verwenden
 
-1.  Install the plugin:
+1.  Installiere das Plugin:
 
 ```shell
 npm install --save gatsby-plugin-manifest
 ```
 
-2. Add a favicon for your app under `src/images/icon.png`. The icon is necessary to build all images for the manifest. For more information look at the docs of [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
+2. Füge deiner Seite ein Favicon unter `src/images/icon.png` hinzu. Das Icon wird benötigt, um alle Bilder für das Manifest zu erstellen. Mehr Informationen hierzu findest du in der Plugin Dokumentation: [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
 
-3. Add the plugin to the `plugins` array in your `gatsby-config.js` file.
+3. Füge das Plugin dem `plugins` Array in deiner `gatsby-config.js` Datei hinzu.
 
 ```javascript:title=gatsby-config.js
 {
@@ -53,4 +53,4 @@ npm install --save gatsby-plugin-manifest
 }
 ```
 
-That's all you need to get started with adding a web manifest to a Gatsby site. The example given reflects a base configuration -- check out the [plugin reference](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode) for more options.
+Das ist alles, was du tun musst, um deiner Gatsby Seite ein Web Manifest hinzuzufügen. Das Beispiel hier spiegelt eine Basiskonfiguration wieder. Für weiterführende Informationen schau dir die [Plugin Dokumentation](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode) an.
