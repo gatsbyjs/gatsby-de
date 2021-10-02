@@ -1,14 +1,14 @@
 ---
-title: Source Plugins
+title: Quellen-Plugin
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-> Dieses Tutorial ist Teil einer Reihe über Gatsby's Datenschicht. Stell sicher, dass du [Teil 4](/tutorial/part-four/) durchgegangen bist, bevor du hier fortsetzt.
+> Dieses Tutorial ist Teil einer Reihe über Gatsbys Datenschicht. Stell sicher, dass du [Teil 4](/tutorial/part-four/) durchgegangen bist, bevor du hier fortfährst.
 
 ## Was beinhaltet dieses Tutorial?
 
-In diesem Tutorial lernst du, wie man mit Hilfe von GraphQL und Quellen-Plugins Daten in Gatsby Seiten integrieren kannst. Bevor du dich jedoch mit diesen Plugins vertraut machst, solltest du wissen, wie man etwas namens GraphiQL verwendet. GraphiQL ist ein Tool, dass dir bei der korrekten Strukturierung deiner Abfragen hilft.
+In diesem Tutorial lernst du, wie man mit Hilfe von GraphQL und Quellen-Plugin Daten in Gatsby Seiten integrieren kannst. Bevor du dich jedoch mit diesen Plugins vertraut machst, solltest du wissen, wie man etwas namens GraphiQL verwendet. GraphiQL ist ein Tool, dass dir bei der korrekten Strukturierung deiner Abfragen hilft.
 
 ## Einführung von GraphiQL
 
@@ -22,7 +22,7 @@ Du kannst darauf zugreifen, wenn der Entwicklungsserver deiner Gatsby Seite läu
   <p>Your browser does not support the video element.</p>
 </video>
 
-Schau dir in der eingebauten `Site` "type" an und welche Felder darin verfügbar sind -- einschließlich des `SiteMetadata`-Objektes, das du zuvor abgefragt hast.  Versuche, GraphiQL zu öffnen und mit deinen Daten herumzuspielen! Drücke <kbd>Strg + Leertaste<kbd> (oder verwende <kbd>Umschalt + Leertaste</kbd> als alternatives Tastaturkürzel) um das Autovervollständigungsfenster aufzurufen und <kbd>Strg + Eingabe<kbd> um die GraphQL-Abfrage auszuführen. Du wirst im weiteren Verlauf des Tutorials wesentlich mehr mit GraphiQL arbeiten.
+Schau dir in der eingebauten `Site` "type" an und welche Felder darin verfügbar sind -- einschließlich des `SiteMetadata`-Objektes, das du zuvor abgefragt hast.  Versuche, GraphiQL zu öffnen und mit deinen Daten herumzuspielen! Drücke <kbd>Strg + Leertaste</kbd> (oder verwende <kbd>Umschalt + Leertaste</kbd> als alternatives Tastaturkürzel) um das Autovervollständigungsfenster aufzurufen und <kbd>Strg + Eingabe</kbd> um die GraphQL-Abfrage auszuführen. Du wirst im weiteren Verlauf des Tutorials wesentlich mehr mit GraphiQL arbeiten.
 
 ## Verwendung des GraphiQL-Explorers
 
@@ -33,11 +33,11 @@ Der GraphiQL Explorer ermöglicht dir die interaktive Erstellung vollständiger 
   lessonTitle="Build a GraphQL Query using Gatsby’s GraphiQL Explorer"
 />
 
-## Quell-Plugins
+## Quellen-Plugins
 
-Daten in Gatsby-Sites können von überall her kommen: APIs (Abkürzung von application programming interface, Programmierschnittstelle), Datenbanken, CMS ( content management system, deutsch Inhaltsverwaltungssystem), lokale Dateien, etc.
+Daten in Gatsby-Seiten können von überall her kommen: APIs (Abkürzung von application programming interface, Programmierschnittstelle), Datenbanken, CMS ( content management system, deutsch Inhaltsverwaltungssystem), lokale Dateien, etc.
 
-Quell-Plugins holen die Daten aus ihrer Quelle. Das Dateisystem Quell-Plugin weiß z.B., wie man Daten aus dem Dateisystem holt. Das WordPress-Plugin weiß, wie man Daten von der WordPress-API abruft.
+Quellen-Plugins holen die Daten aus ihrer Quelle. Das Dateisystem Quellen-Plugin weiß z.B., wie man Daten aus dem Dateisystem holt. Das WordPress-Plugin weiß, wie man Daten von der WordPress-API abruft.
 
 Füge [`gatsby-source-filesystem`](/packages/gatsby-source-filesystem/) hinzu und erkunde, wie es funktioniert.
 
@@ -207,4 +207,4 @@ Und jetzt schau dir `http://localhost:8000/my-files` an... 😲
 
 ## Was kommt als nächstes?
 
-Jetzt haben wir gelernt, wie Quell-Plugins Daten in das Datensystem von Gatsby bringen. Im nächsten Tutorial lernst du, wie Transformations-Plugins die von den Source-Plugins gelieferten Rohdaten umwandeln.  Die Kombination aus Source-Plugins und Transformations-Plugins kann alle Datenbeschaffungs- und Datenumwandlungsaufgaben übernehmen, die bei der Erstellung einer Gatsby-Website anfallen. Mehr über Transformations-Plugins erfährst du in [part six of the tutorial](/tutorial/part-six/).
+Jetzt haben wir gelernt, wie Quellen-Plugins Daten in das Datensystem von Gatsby bringen. Im nächsten Tutorial lernst du, wie Transformer-Plugins die von den Source-Plugins gelieferten Rohdaten umwandeln.  Die Kombination aus Source-Plugins und Transformer-Plugins kann alle Datenbeschaffungs- und Datenumwandlungsaufgaben übernehmen, die bei der Erstellung einer Gatsby-Webseite anfallen. Mehr über Transformer-Plugins erfährst du in [Teil sechs des Tutorials](/tutorial/part-six/).
