@@ -23,9 +23,9 @@ Benutze das plugin [`gatsby-source-filesystem`](/packages/gatsby-source-filesyst
 
 ### Plugin hinzufügen
 
-**NOTE:** There are two ways to add a plugin in `gatsby-config.js`. Either you can pass a string with the plugin name or in case you want to include options, pass an object.
+**Hinweis:** Es gibt zwei Möglichkeiten, ein Plugin in `gatsby-config.js` hinzuzufügen. Entweder du fügst einen String mit dem Namen des Plugins ein oder falls du Optionen einfügen möchtest, ein Objekt.
 
-Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. Now pass the object from the next block to the `plugins` array. By passing an object that includes the key `path`, you set the file system path.
+Öffne `gatsby-config.js`, um das `gatsby-source-filesystem`-Plugin hinzuzufügen. Füge nun das Objekt aus dem nächsten Block dem Array `plugins` hinzu. Durch die Übergabe eines Objekts, das den Schlüssel „path“ enthält, bestimmst du den Dateisystempfad.
 
 ```javascript:title=gatsby-config.js
 plugins: [
@@ -39,19 +39,19 @@ plugins: [
 ]
 ```
 
-Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
+Wenn du den obigen Schritt abgeschlossen hast, hast du die Markdown-Dateien aus dem Dateisystem „gesourct“. Nun kannst du das Markdown in HTML und das YAML frontmatter in JSON „umzuwandeln“.
 
-## Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
+## Markdown zu HTML und Frontmatter zu Daten mit `gatsby-transformer-remark` umwandeln
 
-You'll use the plugin [`gatsby-transformer-remark`](/packages/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
+Du wirst das Plugin [`gatsby-transformer-remark`](/packages/gatsby-transformer-remark/) nutzen, um Markdown-Dateien und deren Inhalt zu erkennen. Das Plugin konvertiert den Frontmatter-Metadaten-Teil deiner Markdown-Dateien als `frontmatter` und den Inhaltsteil als HTML.
 
-### Install transformer plugin
+### Installation des Transformer-Plugin
 
 `npm install --save gatsby-transformer-remark`
 
-### Configure plugin
+### Plugin konfigurieren
 
-Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
+Füge dies zu `gatsby-config.js` zu nachdem du das `gatsby-source-filesystem` hinzugefügt hast.
 
 ```javascript:title=gatsby-config.js
 plugins: [
@@ -66,14 +66,14 @@ plugins: [
 ]
 ```
 
-## Add a Markdown file
+## Eine Markdown-Datei hinzufügen
 
-Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`.
-Now create a Markdown file inside it with the name `post-1.md`.
+Erstelle einen Ordner im `/src` Verzeichnis deiner Gatsby-Anwendung namens `markdown-pages`.
+Erstelle nun darin eine Markdown-Datei mit dem Namen `post-1.md`.
 
-### Frontmatter for metadata in Markdown files
+### Frontmatter für Metadaten in Markdown-Dateien
 
-When you create a Markdown file, you can include a set of key value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called frontmatter and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as `frontmatter`. The GraphQL API will provide the key value pairs as data in your React components.
+Wenn du eine Markdown-Datei erstellst, kannst du eine Reihe von Schlüssel-Wert-Paaren einfügen, die verwendet werden können, um zusätzliche Daten zu liefern, die für bestimmte Seiten in der GraphQL-Datenschicht relevant sind. Diese Daten werden als Frontmatter bezeichnet und sind durch die dreifachen Striche am Anfang und Ende des Blocks gekennzeichnet. Dieser Block wird von `gatsby-transformer-remark` als `frontmatter` zerlegt. Die GraphQL-API stellt die Schlüssel-Wert-Paare als Daten in deinen React-Komponenten bereit.
 
 ```markdown:title=src/markdown-pages/post-1.md
 ---
@@ -83,12 +83,12 @@ title: "My first blog post"
 ---
 ```
 
-What is important in this step is the key pair `path`. The value that is assigned to the key `path` is used in order to navigate to your post.
+Wichtig in diesem Schritt ist das Schlüsselpaar `path`. Der Wert, der dem Schlüssel `path` zugewiesen wird, wird verwendet, um zu deinem Beitrag zu navigieren.
 
-## Create a page template for the Markdown files
+## Eine Seitenvorlage für die Markdown-Dateien erstellen
 
-Create a folder in the `/src` directory of your Gatsby application called `templates`.
-Now create a `blogTemplate.js` inside it with the following content:
+Erstelle einen Ordner im `/src` Verzeichnis Ihrer Gatsby-Anwendung namens `templates`.
+Erstelle nun eine `blogTemplate.js` in ihr mit folgendem Inhalt:
 
 ```jsx:title=src/templates/blogTemplate.js
 import React from "react"
@@ -127,11 +127,11 @@ export const pageQuery = graphql`
 `
 ```
 
-Two things are important in the file above:
+Zwei Dinge sind in der obigen Datei wichtig:
 
-1.  A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query's result.
+1.  Eine GraphQL-Abfrage wird in der zweiten Hälfte der Datei durchgeführt, um die Markdown-Daten zu erhalten. Gatsby hat dir automatisch alle Markdown-Metadaten und HTML im Ergebnis dieser Abfrage zur Verfügung gestellt.
 
-    **Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)**
+    **Hinweis: Um mehr über GraphQL zu erfahren, schaue dir diese [hervorragende Quelle](https://www.howtographql.com/)** an
 
 2.  The result of the query is injected by Gatsby into the `Template` component as `data`. `markdownRemark` is the property that you'll find has all the details of the Markdown file. You can use that to construct a template for your blog post view. Since it's a React component, you could style it with any of the [recommended styling systems](/docs/styling/) in Gatsby.
 
