@@ -1,6 +1,6 @@
 ---
 title: Gatsby Browser APIs
-description: Dokumentation über das Aushebeln des Standardbrowser APIs in Gatsby
+description: Dokumentation über das Aushebeln der Standardbrowser APIs in Gatsby
 jsdoc: ["gatsby/src/utils/api-browser-docs.js"]
 apiCalls: BrowserAPI
 showTopLevelSignatures: true
