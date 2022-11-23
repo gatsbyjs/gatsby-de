@@ -1,27 +1,27 @@
 ---
-title: Adding Markdown Pages
+title: Markdown-Seiten hinzufügen
 ---
 
-Gatsby can use Markdown files to create pages in your site.
-You add plugins to read and understand folders with Markdown files and from them create pages automatically.
+Gatsby kann Markdown-Dateien verwenden, um Seiten auf deiner Website zu erstellen.
+Du fügst Plugins hinzu, um Ordner mit Markdown-Dateien zu lesen und zu verstehen und daraus automatisch Seiten zu erstellen.
 
-Here are the steps Gatsby follows for making this happen.
+Hier sind die Schritte, die Gatsby folgt, um dies zu erreichen.
 
-1.  Read files into Gatsby from the filesystem
-2.  Transform Markdown to HTML and [frontmatter](#frontmatter-for-metadata-in-markdown-files) to data
-3.  Add a Markdown file
-4.  Create a page component for the Markdown files
-5.  Create static pages using Gatsby's Node.js `createPage` API
+1.  Liest Dateien aus dem Dateisystem in Gatsby ein
+2.  Wandelt Markdown in HTML um und [frontmatter](#frontmatter-for-metadata-in-markdown-files) zu Daten
+3.  Fügt eine Markdown-Datei hinzu
+4.  Erstellt eine Seitenkomponente für die Markdown-Dateien
+5.  Erstellt statische Seiten mit Node.js `createPage` API von Gatsby 
 
-## Read files into Gatsby from the filesystem
+## Dateien aus dem Dateisystem in Gatsby einlesen
 
-Use the plugin [`gatsby-source-filesystem`](/packages/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
+Benutze das plugin [`gatsby-source-filesystem`](/packages/gatsby-source-filesystem/#gatsby-source-filesystem), um Dateien zu lesen.
 
-### Install
+### Installation
 
 `npm install --save gatsby-source-filesystem`
 
-### Add plugin
+### Plugin hinzufügen
 
 **NOTE:** There are two ways to add a plugin in `gatsby-config.js`. Either you can pass a string with the plugin name or in case you want to include options, pass an object.
 
