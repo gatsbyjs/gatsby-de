@@ -137,7 +137,7 @@ Zwei Dinge sind in der obigen Datei wichtig:
 
 ### Statische Seiten mit der Node.js `createPage` API von Gatsby erstellen
 
-Gatsby stellt eine leistungsstarke Node.js-API zur Verfügung, die Funktionen wie die Erstellung dynamischer Seiten ermöglicht. Diese API ist verfügbar in der `gatsby-node.js` Datei im Stammverzeichnis deines Projekts, auf der gleichen Ebene wie `gatsby-config.js`. Jeder Export, der in dieser Datei enthalten ist, wird von Gatsby ausgeführt, wie in seiner [Node API Spezifikation](/docs/node-apis/) beschrieben. In diesem Fall solltest du dich jedoch nur um eine bestimmte API in diesem Fall kümmern, `createPages`.
+Gatsby stellt eine leistungsstarke Node.js-API zur Verfügung, die Funktionen wie die Erstellung dynamischer Seiten ermöglicht. Diese API ist verfügbar in der `gatsby-node.js` Datei im Stammverzeichnis deines Projekts, auf der gleichen Ebene wie `gatsby-config.js`. Jeder Export, der in dieser Datei enthalten ist, wird von Gatsby ausgeführt, wie in seiner [Node API Spezifikation](/docs/node-apis/) beschrieben. Du solltest dich jedoch nur um die API `createPages` kümmern.
 
 Verwende die `graphql` um die Daten einer Markdown-Datei wie unten beschrieben abzufragen. Verwende danach den `createPage` Action Creator, um eine Seite für jede der Markdown-Dateien zu erstellen, indem du die `blogTemplate.js`, die du im vorherigen Schritt erstellt hast, benutzt.
 
