@@ -133,15 +133,15 @@ Zwei Dinge sind in der obigen Datei wichtig:
 
     **Hinweis: Um mehr über GraphQL zu erfahren, schaue dir diese [hervorragende Quelle](https://www.howtographql.com/)** an
 
-2.  The result of the query is injected by Gatsby into the `Template` component as `data`. `markdownRemark` is the property that you'll find has all the details of the Markdown file. You can use that to construct a template for your blog post view. Since it's a React component, you could style it with any of the [recommended styling systems](/docs/styling/) in Gatsby.
+2.  Das Ergebnis der Abfrage wird von Gatsby in die `Template` Komponente als `data` eingespeist. `markdownRemark` ist die Eigenschaft, in der du alle Details der Markdown-Datei findest. Daraus kannst du eine Vorlage für die Ansicht deines Blogeintrags konstruieren. Da es sich um eine React-Komponente handelt, kannst du sie mit jeder der [empfohlenen Styling-Systeme](/docs/styling/) in Gatsby bearbeiten.
 
-### Create static pages using Gatsby’s Node.js `createPage` API
+### Statische Seiten mit der Node.js `createPage` API von Gatsby erstellen
 
-Gatsby exposes a powerful Node.js API, which allows for functionality such as creating dynamic pages. This API is available in the `gatsby-node.js` file in the root directory of your project, at the same level as `gatsby-config.js`. Each export found in this file will be run by Gatsby, as detailed in its [Node API specification](/docs/node-apis/). However, you should only care about one particular API in this instance, `createPages`.
+Gatsby stellt eine leistungsstarke Node.js-API zur Verfügung, die Funktionen wie die Erstellung dynamischer Seiten ermöglicht. Diese API ist verfügbar in der `gatsby-node.js` Datei im Stammverzeichnis deines Projekts, auf der gleichen Ebene wie `gatsby-config.js`. Jeder Export, der in dieser Datei enthalten ist, wird von Gatsby ausgeführt, wie in seiner [Node API Spezifikation](/docs/node-apis/) beschrieben. In diesem Fall solltest du dich jedoch nur um eine bestimmte API in diesem Fall kümmern, `createPages`.
 
-Use the `graphql` to query Markdown file data as below. Next, use the `createPage` action creator to create a page for each of the Markdown files using the `blogTemplate.js` you created in the previous step.
+Verwende die `graphql` um die Daten einer Markdown-Datei wie unten beschrieben abzufragen. Verwende danach den `createPage` Action Creator, um eine Seite für jede der Markdown-Dateien zu erstellen, indem du die `blogTemplate.js`, die du im vorherigen Schritt erstellt hast, benutzt.
 
-**NOTE:** Gatsby calls the `createPages` API (if present) at build time with injected parameters, `actions` and `graphql`.
+**HINWEIS:** Gatsby ruft die `createPages` API (falls vorhanden) zur Erstellungszeit mit eingespeisten Parametern, `actions` und `graphql`.
 
 ```javascript:title=gatsby-node.js
 const path = require(`path`)
@@ -184,14 +184,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 }
 ```
 
-This should get you started on some basic Markdown functionality in your Gatsby site. You can further customize the frontmatter and the template file to get desired effects!
+Damit solltest einige der grundlegenden Markdown-Funktionen auf deiner Gatsby-Site kennengelernt haben. Du kannst das Frontmatter und die Vorlagendatei weiter anpassen, um die gewünschten Effekte zu erzielen!
 
-For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
+Weitere Informationen findest du im Beispiel `using-markdown-pages`. Du findest es in der [Gatsby Beispielbereich](https://github.com/gatsbyjs/gatsby/tree/master/examples).
 
-## Other tutorials
+## Andere Tutorials
 
-Check out tutorials listed on the [Awesome Gatsby](/docs/awesome-gatsby-resources/#gatsby-tutorials) page for more information on building Gatsby sites with Markdown.
+Schau dir die Tutorials auf der [Awesome Gatsby](/docs/awesome-gatsby-resources/#gatsby-tutorials) Seite für weitere Informationen zur Erstellung von Gatsby-Seiten mit Markdown an.
 
-## Gatsby Markdown starters
+## Gatsby Markdown Vorlagen
 
-There are also a number of [Gatsby starters](/starters?c=Markdown) that come pre-configured to work with Markdown.
+Außerdem gibt es eine Reihe von [Gatsby Vorlagen](/starters?c=Markdown), die für die Arbeit mit Markdown vorkonfiguriert sind.
